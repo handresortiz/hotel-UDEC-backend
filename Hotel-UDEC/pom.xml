@@ -148,7 +148,7 @@
                   <groupId>org.apache.maven.plugins</groupId>
                   <artifactId>maven-site-plugin</artifactId>
                   <version>3.9.1</version>
-                  <configuration>
+                  <configuration><
                       <locales>es,es</locales>
                   </configuration>
                   <executions>
