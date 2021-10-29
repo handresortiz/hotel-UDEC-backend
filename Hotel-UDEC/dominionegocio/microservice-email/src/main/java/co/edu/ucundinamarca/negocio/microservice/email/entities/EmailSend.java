@@ -1,9 +1,30 @@
 package co.edu.ucundinamarca.negocio.microservice.email.entities;
 
-import com.sendgrid.helpers.mail.objects.Email;
+
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotNull;
 
 public class EmailSend {
 
-    public Email to;
-    public Email from;
+    @Email
+    private String to;
+
+    @NotNull
+    private String name;
+
+    public String getTo() {
+        return to;
+    }
+
+    public void setTo(String to) {
+        this.to = to;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 }

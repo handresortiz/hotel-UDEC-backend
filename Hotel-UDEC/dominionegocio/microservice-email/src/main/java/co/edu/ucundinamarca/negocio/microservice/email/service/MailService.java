@@ -23,20 +23,18 @@ public class MailService {
 
     private static final Logger logger = LoggerFactory.getLogger(MailService.class);
 
-    public String sentTestTextEmail() throws IOException {
+    public String sentTestTextEmail(String name, String To) throws IOException {
         // the sender email should be the same as we used to Create a Single Sender Verification
         Email from = new Email("dmattcomics@gmail.com");
-        Email to = new Email("huesitos-221@hotmail.com");
-
         Mail mail = new Mail();
-
+        Email to = new Email(To);
         // I try to keep every think simple
         DynamicTemplatePersonalization personalization = new DynamicTemplatePersonalization();
         personalization.addTo(to);
         mail.setFrom(from);
-        mail.setSubject("test email");
+        mail.setSubject("Email of verification");
         // This is the first_name variable that we created on the template
-        personalization.addDynamicTemplateData("first_name", "Daniel");
+        personalization.addDynamicTemplateData("first_name", name);
         mail.addPersonalization(personalization);
         mail.setTemplateId("d-d9f5f324a5ed4ff084f89afd5c8b6fa0");
 
