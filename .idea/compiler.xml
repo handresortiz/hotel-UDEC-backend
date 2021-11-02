@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="login" />
         <module name="customerservice" />
+        <module name="registro" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -17,11 +18,13 @@
       <module name="dominionegocio" target="1.8" />
       <module name="Hotel-UDEC" target="1.8" />
       <module name="login" target="1.8" />
+      <module name="registro" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="login" options="" />
+      <module name="registro" options="" />
     </option>
   </component>
 </project>
