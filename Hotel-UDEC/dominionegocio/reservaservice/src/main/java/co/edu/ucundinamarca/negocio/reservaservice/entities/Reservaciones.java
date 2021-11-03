@@ -11,11 +11,27 @@ public class Reservaciones {
     @GeneratedValue( strategy = GenerationType.IDENTITY)
     private Integer id_reservacion;
 
-    private Integer id_habitacion;
     private Date fec_inicio;
     private Date fec_fin;
+
     private Date fec_cambio;
+
     private Long id_usuario_cambio;
+
+    @OneToOne()
+    @JoinColumn(name = "id_habitacion")
+    private Habitaciones habitacion;
+
+    public Reservaciones() {
+    }
+
+    public Habitaciones getHabitacion() {
+        return habitacion;
+    }
+
+    public void setHabitacion(Habitaciones habitacion) {
+        this.habitacion = habitacion;
+    }
 
     public Integer getId_reservacion() {
         return id_reservacion;
@@ -23,14 +39,6 @@ public class Reservaciones {
 
     public void setId_reservacion(Integer id_reservacion) {
         this.id_reservacion = id_reservacion;
-    }
-
-    public Integer getId_habitacion() {
-        return id_habitacion;
-    }
-
-    public void setId_habitacion(Integer id_habitacion) {
-        this.id_habitacion = id_habitacion;
     }
 
     public Date getFec_inicio() {
@@ -49,8 +57,8 @@ public class Reservaciones {
         this.fec_fin = fec_fin;
     }
 
-    public void setFec_cambio(Date fec_cambio) {
-        this.fec_cambio = fec_cambio;
+    public void setFec_cambio() {
+        this.fec_cambio = new Date();
     }
 
     public void setId_usuario_cambio(Long id_usuario_cambio) {

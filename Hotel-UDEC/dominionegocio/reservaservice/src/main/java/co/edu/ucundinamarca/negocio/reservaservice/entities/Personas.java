@@ -1,6 +1,7 @@
 package co.edu.ucundinamarca.negocio.reservaservice.entities;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.util.Date;
 
 @Entity
@@ -11,8 +12,10 @@ public class Personas {
     @GeneratedValue( strategy = GenerationType.IDENTITY )
     private Integer id_persona;
 
+    @NotNull
     private String pri_nombre;
     private String seg_nombre;
+    @NotNull
     private String pri_apellido;
     private String seg_apellido;
     private String razon_social;
@@ -20,9 +23,11 @@ public class Personas {
     private String telefono;
 
     @Column( unique = true )
+    @NotNull
     private String correo;
 
     @Column( unique = true )
+    @NotNull
     private Long identificacion;
 
     private Character genero;
