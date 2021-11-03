@@ -11,12 +11,25 @@ public class ReservasService {
     private final HuespedesRepository huespedesRepository;
 
     @Autowired
-    public ReservasService(HuespedesRepository huespedesRepository) {
+    public ReservasService(HuespedesRepository huespedesRepository, PersonasService personasService) {
         this.huespedesRepository = huespedesRepository;
     }
 
     public Huespedes getHuespedById( Integer id ) {
         return huespedesRepository.findById( id ).get();
     }
+    public Huespedes addHuespedPar(Huespedes huesped){
+        return huespedesRepository.save(huesped);
+    }
+    public Huespedes addHuesped(Huespedes huesped){
 
+        return huespedesRepository.save(huesped);
+    }
+    public Huespedes updateHuesped(Integer id, Huespedes huesped){
+        return huespedesRepository.save(huesped);
+    }
+    public Huespedes deleteHuespedById( Integer id ){
+        huespedesRepository.deleteById(id);
+        return null;
+    }
 }
