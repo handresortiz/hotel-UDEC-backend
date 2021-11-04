@@ -2,15 +2,12 @@ package co.edu.ucundinamarca.negocio.reservaservice.controller;
 
 import co.edu.ucundinamarca.negocio.reservaservice.entities.Habitaciones;
 import co.edu.ucundinamarca.negocio.reservaservice.entities.TipoHabitacion;
-import co.edu.ucundinamarca.negocio.reservaservice.repository.HabitacionesRepository;
-import co.edu.ucundinamarca.negocio.reservaservice.repository.TipoHabitacionRepository;
 import co.edu.ucundinamarca.negocio.reservaservice.services.HabitacionesService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.web.bind.annotation.*;
 
+import java.util.Date;
 import java.util.List;
 
 @RestController
@@ -32,5 +29,22 @@ public class HabitacionesController {
     @GetMapping("/tipo/{id}")
     public TipoHabitacion getTipoHabitacion( @PathVariable("id") Integer id ){
         return habitacionesService.getTipoHabitacionById( id );
+    }
+
+    //Filtrar Habitacion por cantidad de adultos y ninos
+//        @GetMapping("/filtro")
+//    public List<TipoHabitacion> getHabitacionesFiltradas(@RequestParam("id") Integer idTipo,
+//                                                         @RequestParam("num_adultos") Integer num_adultos,
+//                                                         @RequestParam("num_ninos") Integer num_ninos){
+//        return habitacionesService.getHabitacionesFiltradas( idTipo,num_adultos,num_ninos);
+//    }
+    @GetMapping("/filtro")
+    public List<TipoHabitacion> getHabitacionesFiltradas(@RequestParam(value = "id", required = false) Integer idTipo,
+                                                         @RequestParam("num_adultos") Integer num_adultos,
+                                                         @RequestParam("num_ninos") Integer num_ninos,
+                                                         @RequestParam("fec_inicio") @DateTimeFormat(pattern = "yyyy-MM-dd") Date fec_inicio,
+                                                         @RequestParam("fec_fin") @DateTimeFormat(pattern = "yyyy-MM-dd") Date fec_fin
+    ){
+        return habitacionesService.getHabitacionesFiltradas( idTipo,num_adultos,num_ninos,fec_inicio,fec_fin);
     }
 }
