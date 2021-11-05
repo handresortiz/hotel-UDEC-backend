@@ -16,4 +16,11 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>reservaservice</name>
     <description>reservaservice</description>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-validation</artifactId>
+        </dependency>
+    </dependencies>
 </project>

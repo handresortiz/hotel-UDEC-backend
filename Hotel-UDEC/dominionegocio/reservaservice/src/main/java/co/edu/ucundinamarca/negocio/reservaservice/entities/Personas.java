@@ -1,6 +1,7 @@
 package co.edu.ucundinamarca.negocio.reservaservice.entities;
 
 import javax.persistence.*;
+import javax.validation.constraints.*;
 import java.util.Date;
 
 @Entity
@@ -11,18 +12,29 @@ public class Personas {
     @GeneratedValue( strategy = GenerationType.IDENTITY )
     private Integer id_persona;
 
+    @NotNull(message = "El primer nombre no debe estar en null")
+    @Size(max = 10,min = 3,message = "El primer nombre no puede ser mayor a 10 caracteres o menor a 3")
     private String pri_nombre;
     private String seg_nombre;
+    @NotNull(message = "El primer apellido no debe estar en null")
+    @Size(max = 10,min = 3,message = "El primer apellido no puede ser mayor a 10 caracteres o menor a 3")
     private String pri_apellido;
     private String seg_apellido;
     private String razon_social;
     private String direccion;
+    @NotNull(message = "El telefono no debe estar en null")
+    @Size(max = 15,min = 6,message = "El telefono debe contener entre 6 y 15 cifras")
     private String telefono;
 
     @Column( unique = true )
+    @NotNull(message = "El correo no debe estar en null")
+    @Email(message = "No es un correo valido")
     private String correo;
 
     @Column( unique = true )
+    @NotNull(message = "La identificación no debe estar en null")
+    @DecimalMax(value = "10000000000",message = "La identificación no puede pasar de 10 cifras")
+    @DecimalMin(value = "1000000",message = "La identificación no puede ser menor a 7 cifras")
     private Long identificacion;
 
     private Character genero;
