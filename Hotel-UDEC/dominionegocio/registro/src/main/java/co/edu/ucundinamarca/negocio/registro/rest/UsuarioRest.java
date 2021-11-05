@@ -14,7 +14,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-@CrossOrigin
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping("/hotel/usuario")
 public class UsuarioRest {
@@ -23,11 +23,12 @@ public class UsuarioRest {
 
     @PostMapping ("/agregar")
     public ResponseEntity<Usuario> crear(@RequestBody Usuario usuario){
-        if(usuarioService.existsByLogin(usuario.getLogin()))
+        if(usuarioService.existsByLogin(usuario.getLogin())) {
             return new ResponseEntity(new Mensaje("el usuario ya existe"), HttpStatus.BAD_REQUEST);
+        }
+
             usuarioService.guardar(usuario);
             return new ResponseEntity(new Mensaje("usuario creado"), HttpStatus.OK);
-
 
     }
 

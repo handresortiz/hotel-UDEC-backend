@@ -11,8 +11,10 @@ metodo de guardar perfil
 package co.edu.ucundinamarca.negocio.registro.service;
 import co.edu.ucundinamarca.negocio.registro.model.Perfil;
 
+import java.util.List;
+
 
 public interface IPerfilService {
     public Perfil guardar(Perfil perfil);
-
+    public Perfil endId();
 }

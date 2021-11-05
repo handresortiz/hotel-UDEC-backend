@@ -23,6 +23,7 @@ import java.sql.Timestamp;
 @Setter
 @ToString
 public class Perfil {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(columnDefinition = "serial")

@@ -19,6 +19,8 @@ import co.edu.ucundinamarca.negocio.registro.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 
 @Service
 public class UsuarioService implements IUsuarioService{
@@ -34,6 +36,8 @@ public class UsuarioService implements IUsuarioService{
     public boolean existsByLogin(String login){
         return usuarioRepository.existsByLogin(login);
     }
+
+    public List<Usuario> countAll(){ return usuarioRepository.findAllBy(); }
 
 
 }
