@@ -3,8 +3,10 @@ package co.edu.ucundinamarca.negocio.reservaservice.services;
 import co.edu.ucundinamarca.negocio.reservaservice.entities.Habitaciones;
 import co.edu.ucundinamarca.negocio.reservaservice.entities.Huespedes;
 import co.edu.ucundinamarca.negocio.reservaservice.entities.Reservaciones;
+import co.edu.ucundinamarca.negocio.reservaservice.entities.Personas;
 import co.edu.ucundinamarca.negocio.reservaservice.repository.HabitacionesRepository;
 import co.edu.ucundinamarca.negocio.reservaservice.repository.HuespedesRepository;
+import co.edu.ucundinamarca.negocio.reservaservice.repository.PersonasRepository;
 import co.edu.ucundinamarca.negocio.reservaservice.repository.ReservacionesRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -23,7 +25,10 @@ public class ReservasService {
     private final HabitacionesRepository habitacionesRepository;
 
     @Autowired
-    public ReservasService(HuespedesRepository huespedesRepository, ReservacionesRepository reservacionesRepository, HabitacionesRepository habitacionesRepository) {
+    public ReservasService(HuespedesRepository huespedesRepository,
+                           PersonasRepository personasRepository,
+                           ReservacionesRepository reservacionesRepository,
+                           HabitacionesRepository habitacionesRepository) {
         this.huespedesRepository = huespedesRepository;
         this.reservacionesRepository = reservacionesRepository;
         this.habitacionesRepository = habitacionesRepository;
@@ -32,7 +37,22 @@ public class ReservasService {
     public Huespedes getHuespedById( Integer id ) {
         return huespedesRepository.findById( id ).get();
     }
-
+    public Huespedes addHuespedPar(Huespedes huesped){
+        return huespedesRepository.save(huesped);
+    }
+    public Huespedes addHuesped(Personas persona,Integer id_usuario){
+        Huespedes huesped = new Huespedes();
+        huesped.setPersona(persona);
+        huesped.setId_usuario(id_usuario);
+        return huespedesRepository.save(huesped);
+    }
+    public Huespedes updateHuesped(Integer id, Huespedes huesped){
+        return huespedesRepository.save(huesped);
+    }
+    public Huespedes deleteHuespedById( Integer id ){
+        huespedesRepository.deleteById(id);
+        return null;
+    }
     /**
      * Verifica la disponibilidad de las habitaciones dadas.
      * @param id_habitaciones Arreglo de ids de habitaciones
@@ -90,5 +110,4 @@ public class ReservasService {
         /* Registra la lista de reservas en la BD, retornando la vista guardada */
         return reservacionesRepository.saveAll( reservas );
     }
-
 }

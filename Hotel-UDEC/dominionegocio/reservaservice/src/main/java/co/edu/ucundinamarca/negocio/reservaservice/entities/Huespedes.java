@@ -45,4 +45,7 @@ public class Huespedes {
     public Personas getPersona() {
         return persona;
     }
+    public void setPersona(Personas persona) {
+        this.persona = persona;
+    }
 }
