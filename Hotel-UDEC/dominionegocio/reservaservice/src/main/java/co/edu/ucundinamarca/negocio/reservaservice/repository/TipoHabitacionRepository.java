@@ -12,7 +12,7 @@ import java.util.List;
 @Repository
 public interface TipoHabitacionRepository extends JpaRepository<TipoHabitacion, Integer> {
 
-    @Query("SELECT t FROM TipoHabitacion t WHERE t.num_adultos >= ?1 AND t.num_ninos >= ?2")
+    @Query("SELECT t FROM TipoHabitacion t WHERE t.num_adultos >= ?1 AND t.num_ninos >= ?2 ORDER BY t.num_adultos, t.num_ninos")
     List<TipoHabitacion> findByPersonas(Integer num_adultos, Integer num_ninos );
 
 }

@@ -39,13 +39,18 @@ public class HabitacionesService {
     }
 
     public List<TipoHabitacion> getHabitacionesFiltradas(Integer idTipo,
+                                                         Integer num_habitaciones,
                                                          Integer num_adultos,
                                                          Integer num_ninos,
                                                          Date fec_inicio,
                                                          Date fec_fin) {
         List<TipoHabitacion> tiposHabitacion = new ArrayList<>();
-
+        int conteoHabitaciones = 0;
         if (idTipo == null) {
+            if( num_ninos == null ){
+                num_ninos = 0;
+            }
+
             tiposHabitacion = tipoHabitacionRepository.findByPersonas(num_adultos, num_ninos);
         } else {
             tiposHabitacion.add(tipoHabitacionRepository.findById(idTipo).get());
@@ -61,6 +66,17 @@ public class HabitacionesService {
                 })
         );
         tiposHabitacion.removeIf(t -> t.getHabitaciones().size() == 0);
+
+        /* Conteo habitaciones */
+        for(TipoHabitacion tipo: tiposHabitacion){
+            conteoHabitaciones += tipo.getHabitaciones().size();
+        }
+
+
+        if(num_habitaciones != null && conteoHabitaciones < num_habitaciones){
+            tiposHabitacion = new ArrayList<>();
+        }
+
         return tiposHabitacion;
     }
 }

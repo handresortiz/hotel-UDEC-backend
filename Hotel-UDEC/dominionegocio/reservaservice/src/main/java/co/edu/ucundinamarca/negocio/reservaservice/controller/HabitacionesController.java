@@ -33,11 +33,12 @@ public class HabitacionesController {
 
     @GetMapping("/filtro")
     public List<TipoHabitacion> getHabitacionesFiltradas(@RequestParam(value = "id", required = false) Integer idTipo,
+                                                         @RequestParam(value = "num_habitaciones", required = false) Integer num_habitaciones,
                                                          @RequestParam("num_adultos") Integer num_adultos,
-                                                         @RequestParam("num_ninos") Integer num_ninos,
+                                                         @RequestParam(value = "num_ninos", required = false) Integer num_ninos,
                                                          @RequestParam("fec_inicio") @DateTimeFormat(pattern = "yyyy-MM-dd") Date fec_inicio,
                                                          @RequestParam("fec_fin") @DateTimeFormat(pattern = "yyyy-MM-dd") Date fec_fin
     ){
-        return habitacionesService.getHabitacionesFiltradas( idTipo,num_adultos,num_ninos,fec_inicio,fec_fin);
+        return habitacionesService.getHabitacionesFiltradas( idTipo, num_habitaciones, num_adultos, num_ninos,fec_inicio,fec_fin);
     }
 }

@@ -4,7 +4,6 @@ import co.edu.ucundinamarca.negocio.reservaservice.validators.MinDateToday;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Getter;
 import lombok.Setter;
-import org.hibernate.validator.constraints.Length;
 
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
