@@ -44,26 +44,14 @@ public class HabitacionesService {
                                                          Date fec_inicio,
                                                          Date fec_fin) {
         List<TipoHabitacion> tiposHabitacion = new ArrayList<>();
-//        Boolean disponible = true;
+
         if (idTipo == null) {
             tiposHabitacion = tipoHabitacionRepository.findByPersonas(num_adultos, num_ninos);
         } else {
             tiposHabitacion.add(tipoHabitacionRepository.findById(idTipo).get());
 
         }
-//        ListIterator<TipoHabitacion> iterTipos = tiposHabitacion.listIterator();
-//        while (iterTipos.hasNext()) {
-//            ListIterator<Habitaciones> iterHabitaciones = iterTipos.next().getHabitaciones().listIterator();
-//            while (iterHabitaciones.hasNext()){
-//                disponible = reservacionesRepository.esHabitacionDisponible(
-//                                iterHabitaciones.next().getId_habitacion(),
-//                               fec_inicio,
-//                               fec_fin);
-//                if(!disponible){
-//                 iterHabitaciones.remove();
-//                }
-//            }
-//        }
+
         tiposHabitacion.forEach(t ->
                 t.getHabitaciones().removeIf(h -> {
                     Boolean disponible = reservacionesRepository.esHabitacionDisponible(h.getId_habitacion(),

@@ -32,12 +32,8 @@ public class ReservasController {
     }
 
     @PostMapping
-    public ResponseEntity<?> registrarReserva(@Valid @RequestBody ReservaForm form){
-        try{
-            List<Reservaciones> reservas = reservasService.registrarReservas( form.getId_habitaciones(), form.getFec_inicio(), form.getFec_fin() );
-            return new ResponseEntity<>(reservas, HttpStatus.OK );
-        }catch ( ResponseStatusException ex){
-            return new ResponseEntity<>(ex.getReason(), ex.getStatus() );
-        }
+    public ResponseEntity<List<Reservaciones>> registrarReserva(@Valid @RequestBody ReservaForm form){
+        List<Reservaciones> reservas = reservasService.registrarReservas( form.getId_habitaciones(), form.getFec_inicio(), form.getFec_fin() );
+        return new ResponseEntity<>(reservas, HttpStatus.OK );
     }
 }

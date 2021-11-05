@@ -1,6 +1,9 @@
 package co.edu.ucundinamarca.negocio.reservaservice.entities;
 
+import co.edu.ucundinamarca.negocio.reservaservice.validators.MinDateToday;
+
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.util.Date;
 
 @Entity
@@ -11,7 +14,9 @@ public class Reservaciones {
     @GeneratedValue( strategy = GenerationType.IDENTITY)
     private Integer id_reservacion;
 
+    @NotNull
     private Date fec_inicio;
+
     private Date fec_fin;
 
     private Date fec_cambio;

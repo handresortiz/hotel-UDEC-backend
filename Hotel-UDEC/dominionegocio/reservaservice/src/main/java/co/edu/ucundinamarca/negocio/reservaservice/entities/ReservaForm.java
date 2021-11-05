@@ -1,29 +1,33 @@
 package co.edu.ucundinamarca.negocio.reservaservice.entities;
 
+import co.edu.ucundinamarca.negocio.reservaservice.validators.MinDateToday;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Getter;
 import lombok.Setter;
+import org.hibernate.validator.constraints.Length;
 
-import javax.validation.constraints.FutureOrPresent;
-import javax.validation.constraints.Min;
+import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import java.util.Date;
 
 @Getter
 @Setter
 public class ReservaForm {
-    @NotNull
+    @NotNull( message = "Datos del cliente requeridos")
     private Personas cliente;
 
-    @NotNull
+    @NotNull( message = "Arreglo con los id de las habitaciones requerido" )
+    @NotEmpty( message = "El arreglo de los id de habitaciones debe contener al menos un id" )
     private Integer[] id_habitaciones;
 
     @JsonFormat(pattern="yyyy-MM-dd")
-    @NotNull
+    @NotNull( message = "Fecha inicio requerida" )
+    @MinDateToday( message = "Fecha inicio debe ser mayor a hoy" )
     private Date fec_inicio;
 
     @JsonFormat(pattern="yyyy-MM-dd")
-    @NotNull
+    @NotNull( message = "Fecha fin requerida" )
+    @MinDateToday( message = "Fecha fin debe ser mayor a hoy" )
     private Date fec_fin;
 
 }

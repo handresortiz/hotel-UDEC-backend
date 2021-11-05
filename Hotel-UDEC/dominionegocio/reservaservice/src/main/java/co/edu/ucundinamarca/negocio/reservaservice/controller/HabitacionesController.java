@@ -31,13 +31,6 @@ public class HabitacionesController {
         return habitacionesService.getTipoHabitacionById( id );
     }
 
-    //Filtrar Habitacion por cantidad de adultos y ninos
-//        @GetMapping("/filtro")
-//    public List<TipoHabitacion> getHabitacionesFiltradas(@RequestParam("id") Integer idTipo,
-//                                                         @RequestParam("num_adultos") Integer num_adultos,
-//                                                         @RequestParam("num_ninos") Integer num_ninos){
-//        return habitacionesService.getHabitacionesFiltradas( idTipo,num_adultos,num_ninos);
-//    }
     @GetMapping("/filtro")
     public List<TipoHabitacion> getHabitacionesFiltradas(@RequestParam(value = "id", required = false) Integer idTipo,
                                                          @RequestParam("num_adultos") Integer num_adultos,
