@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
  
     <parent>
-        <groupId>co.edu.ucundinamarca</groupId>
-        <artifactId>Hotel-UDEC</artifactId>
+        <groupId>co.edu.ucundinamarca.negocio</groupId>
+        <artifactId>dominionegocio</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-   
+
     <groupId>co.edu.ucundinamarca.negocio</groupId>
     <artifactId>dominionegocio</artifactId>
     <packaging>pom</packaging>
