@@ -43,6 +43,11 @@ public class PersonaRest {
         return new ResponseEntity(new Mensaje("persona creada"), HttpStatus.OK);
     }
 
+    @GetMapping("/listar")
+    public Persona findEnd() {
+        return personaService.endId();
+    }
+
 
 }
 

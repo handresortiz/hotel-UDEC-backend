@@ -13,6 +13,7 @@ se agregaron los diferentes metodos para filtar por correo, tekefono y identific
 package co.edu.ucundinamarca.negocio.registro.repository;
 import co.edu.ucundinamarca.negocio.registro.model.Persona;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
@@ -28,5 +29,7 @@ public interface PersonaRepository extends JpaRepository<Persona, Long> {
     Optional<Persona> findByTelefono(String telefono);
     boolean existsByTelefono(String telefono);
 
+    @Query( value = "SELECT * FROM personas ORDER BY id_persona DESC LIMIT 1", nativeQuery = true)
+    Persona findAllOrderById_persona();
 
 }

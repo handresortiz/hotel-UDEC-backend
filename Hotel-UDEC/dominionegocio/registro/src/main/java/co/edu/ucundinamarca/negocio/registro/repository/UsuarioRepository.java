@@ -9,6 +9,7 @@ permita trabajar todos los metodos desde el package service
 package co.edu.ucundinamarca.negocio.registro.repository;
 import co.edu.ucundinamarca.negocio.registro.model.Usuario;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;

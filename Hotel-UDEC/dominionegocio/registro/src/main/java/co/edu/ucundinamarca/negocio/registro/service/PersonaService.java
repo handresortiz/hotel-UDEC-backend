@@ -32,6 +32,11 @@ public class PersonaService implements IPersonaService{
         return personaRepository.save(persona);
     }
 
+    @Override
+    public Persona endId() {
+        return personaRepository.findAllOrderById_persona();
+    }
+
     public boolean existsByCorreo(String correo){
         return personaRepository.existsByCorreo(correo);
     }

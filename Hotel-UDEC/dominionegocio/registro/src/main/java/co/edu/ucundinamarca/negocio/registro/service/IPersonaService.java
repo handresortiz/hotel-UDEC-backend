@@ -13,5 +13,5 @@ import co.edu.ucundinamarca.negocio.registro.model.Persona;
 
 public interface IPersonaService {
     public Persona guardar(Persona persona);
-
+    public Persona endId();
 }
