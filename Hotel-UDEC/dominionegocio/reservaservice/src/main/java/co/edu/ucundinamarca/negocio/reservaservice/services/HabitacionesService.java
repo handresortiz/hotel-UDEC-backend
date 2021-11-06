@@ -44,8 +44,9 @@ public class HabitacionesService {
                                                          Integer num_ninos,
                                                          Date fec_inicio,
                                                          Date fec_fin) {
+
         List<TipoHabitacion> tiposHabitacion = new ArrayList<>();
-        int conteoHabitaciones = 0;
+
         if (idTipo == null) {
             if( num_ninos == null ){
                 num_ninos = 0;
@@ -65,17 +66,10 @@ public class HabitacionesService {
                     return !disponible;
                 })
         );
-        tiposHabitacion.removeIf(t -> t.getHabitaciones().size() == 0);
 
-        /* Conteo habitaciones */
-        for(TipoHabitacion tipo: tiposHabitacion){
-            conteoHabitaciones += tipo.getHabitaciones().size();
-        }
-
-
-        if(num_habitaciones != null && conteoHabitaciones < num_habitaciones){
-            tiposHabitacion = new ArrayList<>();
-        }
+        tiposHabitacion.removeIf(t -> t.getHabitaciones().size() == 0
+                                        || (num_habitaciones != null ? t.getHabitaciones().size() < num_habitaciones
+                                                                    : false) );
 
         return tiposHabitacion;
     }

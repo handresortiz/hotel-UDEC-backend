@@ -1,9 +1,6 @@
 package co.edu.ucundinamarca.negocio.reservaservice.services;
 
-import co.edu.ucundinamarca.negocio.reservaservice.entities.Habitaciones;
-import co.edu.ucundinamarca.negocio.reservaservice.entities.Huespedes;
-import co.edu.ucundinamarca.negocio.reservaservice.entities.Reservaciones;
-import co.edu.ucundinamarca.negocio.reservaservice.entities.Personas;
+import co.edu.ucundinamarca.negocio.reservaservice.entities.*;
 import co.edu.ucundinamarca.negocio.reservaservice.repository.HabitacionesRepository;
 import co.edu.ucundinamarca.negocio.reservaservice.repository.HuespedesRepository;
 import co.edu.ucundinamarca.negocio.reservaservice.repository.PersonasRepository;
@@ -16,6 +13,7 @@ import org.springframework.web.server.ResponseStatusException;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 @Service
 public class ReservasService {
@@ -83,7 +81,14 @@ public class ReservasService {
         }
     }
 
-    public List<Reservaciones> registrarReservas(Integer[] id_habitaciones, Date fec_inicio, Date fec_fin){
+    private long getDiferenciaFechas(Date fec_inicio, Date fec_fin){
+        TimeUnit time = TimeUnit.DAYS;
+        long diff = fec_fin.getTime() - fec_inicio.getTime();
+
+        return time.convert( diff, TimeUnit.MILLISECONDS );
+    }
+
+    public List<Reservaciones> getListReservas(Integer[] id_habitaciones, Date fec_inicio, Date fec_fin){
 
         List<Reservaciones> reservas = new ArrayList<>();  // Reservaciones a registrar
 
@@ -93,12 +98,18 @@ public class ReservasService {
         for ( Integer id_habitacion : id_habitaciones) {
             /* Crea un objeto de reserva para encapsular los datos de la reserva*/
             Reservaciones reserva = new Reservaciones();
+
             /* Encuentra el objeto habitacion por su id */
             Habitaciones habitacion = habitacionesRepository.findById( id_habitacion ).get();
+
+            /* Calcula el valor de la reserva del precio de la habitacion por la cantidad de dias */
+            Long valor = habitacion.getTipo().getPrecio_habitacion();
+            valor *= getDiferenciaFechas( fec_inicio, fec_fin );
 
             /* Guarda el objeto habitacion encontrado dentro del objeto reserva */
             reserva.setHabitacion( habitacion );
 
+            reserva.setValor( valor );
             reserva.setFec_inicio( fec_inicio );
             reserva.setFec_fin( fec_fin );
             reserva.setFec_cambio();
@@ -107,7 +118,11 @@ public class ReservasService {
             reservas.add( reserva );
         }
 
-        /* Registra la lista de reservas en la BD, retornando la vista guardada */
+        return reservas;
+    }
+
+    public List<Reservaciones> registrarReservas( List<Reservaciones> reservas, Cuenta cuenta ){
+        reservas.forEach( r -> r.setCuenta( cuenta ) );
         return reservacionesRepository.saveAll( reservas );
     }
 }

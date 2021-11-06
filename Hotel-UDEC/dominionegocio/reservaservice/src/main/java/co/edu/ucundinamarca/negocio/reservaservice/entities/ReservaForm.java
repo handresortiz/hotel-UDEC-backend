@@ -21,12 +21,12 @@ public class ReservaForm {
 
     @JsonFormat(pattern="yyyy-MM-dd")
     @NotNull( message = "Fecha inicio requerida" )
-    @MinDateToday( message = "Fecha inicio debe ser mayor a hoy" )
+    @MinDateToday( message = "Fecha inicio debe ser mayor o igual a hoy" )
     private Date fec_inicio;
 
     @JsonFormat(pattern="yyyy-MM-dd")
     @NotNull( message = "Fecha fin requerida" )
-    @MinDateToday( message = "Fecha fin debe ser mayor a hoy" )
+    @MinDateToday( message = "Fecha fin debe ser mayor o igual a hoy" )
     private Date fec_fin;
 
 }

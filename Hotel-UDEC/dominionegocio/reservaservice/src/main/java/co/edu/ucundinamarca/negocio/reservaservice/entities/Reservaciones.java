@@ -1,6 +1,6 @@
 package co.edu.ucundinamarca.negocio.reservaservice.entities;
 
-import co.edu.ucundinamarca.negocio.reservaservice.validators.MinDateToday;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
@@ -15,8 +15,12 @@ public class Reservaciones {
     private Integer id_reservacion;
 
     @NotNull
+    private Long valor;
+
+    @NotNull
     private Date fec_inicio;
 
+    @NotNull
     private Date fec_fin;
 
     private Date fec_cambio;
@@ -27,8 +31,10 @@ public class Reservaciones {
     @JoinColumn(name = "id_habitacion")
     private Habitaciones habitacion;
 
-    public Reservaciones() {
-    }
+    @JsonIgnore
+    @ManyToOne
+    @JoinColumn( name="id_cuenta" )
+    private Cuenta cuenta;
 
     public Habitaciones getHabitacion() {
         return habitacion;
@@ -68,5 +74,21 @@ public class Reservaciones {
 
     public void setId_usuario_cambio(Long id_usuario_cambio) {
         this.id_usuario_cambio = id_usuario_cambio;
+    }
+
+    public Long getValor() {
+        return valor;
+    }
+
+    public void setValor(Long valor) {
+        this.valor = valor;
+    }
+
+    public Cuenta getCuenta() {
+        return cuenta;
+    }
+
+    public void setCuenta(Cuenta cuenta) {
+        this.cuenta = cuenta;
     }
 }
