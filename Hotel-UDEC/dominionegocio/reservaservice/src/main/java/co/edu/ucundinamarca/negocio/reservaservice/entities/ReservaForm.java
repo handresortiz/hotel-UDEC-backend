@@ -5,6 +5,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Getter;
 import lombok.Setter;
 
+import javax.validation.Valid;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import java.util.Date;
@@ -13,6 +14,7 @@ import java.util.Date;
 @Setter
 public class ReservaForm {
     @NotNull( message = "Datos del cliente requeridos")
+    @Valid
     private Personas cliente;
 
     @NotNull( message = "Arreglo con los id de las habitaciones requerido" )

@@ -3,14 +3,18 @@ package co.edu.ucundinamarca.negocio.reservaservice.controller;
 import co.edu.ucundinamarca.negocio.reservaservice.entities.Habitaciones;
 import co.edu.ucundinamarca.negocio.reservaservice.entities.TipoHabitacion;
 import co.edu.ucundinamarca.negocio.reservaservice.services.HabitacionesService;
+import co.edu.ucundinamarca.negocio.reservaservice.validators.MinDateToday;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.constraints.Min;
 import java.util.Date;
 import java.util.List;
 
 @RestController
+@Validated
 @RequestMapping("api/habitaciones")
 public class HabitacionesController {
 
@@ -33,11 +37,11 @@ public class HabitacionesController {
 
     @GetMapping("/filtro")
     public List<TipoHabitacion> getHabitacionesFiltradas(@RequestParam(value = "id", required = false) Integer idTipo,
-                                                         @RequestParam(value = "num_habitaciones", required = false) Integer num_habitaciones,
-                                                         @RequestParam("num_adultos") Integer num_adultos,
-                                                         @RequestParam(value = "num_ninos", required = false) Integer num_ninos,
-                                                         @RequestParam("fec_inicio") @DateTimeFormat(pattern = "yyyy-MM-dd") Date fec_inicio,
-                                                         @RequestParam("fec_fin") @DateTimeFormat(pattern = "yyyy-MM-dd") Date fec_fin
+                                                         @RequestParam(value = "num_habitaciones", required = false) @Min(1) Integer num_habitaciones,
+                                                         @RequestParam("num_adultos") @Min(1) Integer num_adultos,
+                                                         @RequestParam(value = "num_ninos", required = false) @Min(0) Integer num_ninos,
+                                                         @RequestParam("fec_inicio") @DateTimeFormat(pattern = "yyyy-MM-dd") @MinDateToday Date fec_inicio,
+                                                         @RequestParam("fec_fin") @DateTimeFormat(pattern = "yyyy-MM-dd") @MinDateToday Date fec_fin
     ){
         return habitacionesService.getHabitacionesFiltradas( idTipo, num_habitaciones, num_adultos, num_ninos,fec_inicio,fec_fin);
     }

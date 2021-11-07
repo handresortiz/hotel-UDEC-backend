@@ -64,14 +64,18 @@ public class ReservasController {
 
     @PostMapping
     public ResponseEntity<Cuenta> registrarReservas(@Valid @RequestBody ReservaForm form){
-        Personas persona;
+        Personas persona = form.getCliente();
         Usuarios usuario;
         Huespedes huesped;
         List<Reservaciones> reservas;
         Cuenta cuenta;
 
-        /* Extrae la info de la persona del body */
-        persona = form.getCliente();
+        /* Verifica que la persona no este registrada */
+        personasService.existsPersona( persona );
+        
+        /* Obtiene un listado de reservas donde se incluye el valor de cada reservacion */
+        reservas = reservasService.getListReservas( form.getId_habitaciones(), form.getFec_inicio(), form.getFec_fin() );
+
         /* Agrega la persona en su entidad */
         persona = personasService.addPersona(persona);
 
@@ -84,9 +88,6 @@ public class ReservasController {
 
         /* Registra un nuevo huesped teniendo el id persona y id usuario */
         huesped = reservasService.addHuesped( persona,usuario.getId_usuario());
-
-        /* Obtiene un listado de reservas donde se incluye el valor de cada reservacion */
-        reservas = reservasService.getListReservas( form.getId_habitaciones(), form.getFec_inicio(), form.getFec_fin() );
 
         /* Registra una nueva cuenta del huesped para asociarle las reservaciones */
         cuenta = cuentaService.registrarCuenta( huesped.getId_huesped(), reservas );
