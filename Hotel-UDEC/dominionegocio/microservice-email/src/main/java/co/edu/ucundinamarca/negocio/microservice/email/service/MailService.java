@@ -25,7 +25,7 @@ public class MailService {
 
     public String sentTestTextEmail(String name, String To) throws IOException {
         // the sender email should be the same as we used to Create a Single Sender Verification
-        Email from = new Email("dmattcomics@gmail.com");
+        Email from = new Email("huesitos-221@hotmail.com");
         Mail mail = new Mail();
         Email to = new Email(To);
         // I try to keep every think simple
@@ -36,9 +36,9 @@ public class MailService {
         // This is the first_name variable that we created on the template
         personalization.addDynamicTemplateData("first_name", name);
         mail.addPersonalization(personalization);
-        mail.setTemplateId("d-d9f5f324a5ed4ff084f89afd5c8b6fa0");
+        mail.setTemplateId("xxxxxx");
 
-        SendGrid sg = new SendGrid("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");
+        SendGrid sg = new SendGrid("XXX-XXX-XXXX");
         Request request = new Request();
         try {
             request.setMethod(Method.POST);
