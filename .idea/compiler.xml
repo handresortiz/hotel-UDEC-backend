@@ -16,7 +16,9 @@
       <module name="dominioinfraestructura" target="1.8" />
       <module name="dominionegocio" target="1.8" />
       <module name="Hotel-UDEC" target="1.8" />
+      <module name="login" target="1.8" />
       <module name="microservice-email" target="1.8" />
+      <module name="registro" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

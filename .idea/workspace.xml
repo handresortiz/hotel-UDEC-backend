@@ -5,9 +5,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e3efa5a-0946-4158-a030-690229c3fe7d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/dominionegocio.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/dominionegocio.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/login/login.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/login/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/login/target/classes/co/edu/ucundinamarca/negocio/login/LoginApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/login/target/classes/co/edu/ucundinamarca/negocio/login/controller/UsuarioController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/login/target/classes/co/edu/ucundinamarca/negocio/login/model/Mensaje.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/login/target/classes/co/edu/ucundinamarca/negocio/login/model/Usuario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/login/target/classes/co/edu/ucundinamarca/negocio/login/repository/UsuarioRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/login/target/classes/co/edu/ucundinamarca/negocio/login/service/IUsuarioService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/login/target/classes/co/edu/ucundinamarca/negocio/login/service/UsurioService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/login/target/test-classes/co/edu/ucundinamarca/negocio/login/LoginApplicationTests.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/microservice-email/src/main/java/co/edu/ucundinamarca/negocio/microservice/email/service/MailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/microservice-email/src/main/java/co/edu/ucundinamarca/negocio/microservice/email/service/MailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/registro.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/target/classes/co/edu/ucundinamarca/negocio/registro/RegistroApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/target/classes/co/edu/ucundinamarca/negocio/registro/model/Perfil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/target/classes/co/edu/ucundinamarca/negocio/registro/model/Persona.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/target/classes/co/edu/ucundinamarca/negocio/registro/model/Usuario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/target/classes/co/edu/ucundinamarca/negocio/registro/repository/PerfilRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/target/classes/co/edu/ucundinamarca/negocio/registro/repository/PersonaRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/target/classes/co/edu/ucundinamarca/negocio/registro/repository/UsuarioRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/target/classes/co/edu/ucundinamarca/negocio/registro/rest/Mensaje.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/target/classes/co/edu/ucundinamarca/negocio/registro/rest/PerfilRest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/target/classes/co/edu/ucundinamarca/negocio/registro/rest/PersonaRest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/target/classes/co/edu/ucundinamarca/negocio/registro/rest/UsuarioRest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/target/classes/co/edu/ucundinamarca/negocio/registro/service/IPerfilService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/target/classes/co/edu/ucundinamarca/negocio/registro/service/IPersonaService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/target/classes/co/edu/ucundinamarca/negocio/registro/service/IUsuarioService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/target/classes/co/edu/ucundinamarca/negocio/registro/service/PerfilService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/target/classes/co/edu/ucundinamarca/negocio/registro/service/PersonaService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/target/classes/co/edu/ucundinamarca/negocio/registro/service/UsuarioService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/target/test-classes/co/edu/ucundinamarca/negocio/registro/RegistroApplicationTests.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +59,7 @@
     </option>
     <option name="myId2Visible">
       <map>
-        <entry key="JPA Structure" value="true" />
+        <entry key="JPA Structure" value="false" />
       </map>
     </option>
   </component>
@@ -36,6 +70,7 @@
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -44,19 +79,38 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File" value="GitIgnore" />
+    <property name="jdk.selected.JAVA_MODULE" value="11" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/microservice-email/pom.xml" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
   </component>
   <component name="RunManager" selected="Spring Boot.MicroserviceEmailApplication">
     <configuration name="CustomerServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="customerservice" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="co.edu.ucundinamarca.negocio.customerservice.CustomerServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="login" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="co.edu.ucundinamarca.negocio.login.LoginApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SHORTEN_COMMAND_LINE" value="NONE" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -68,6 +122,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RegistroApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="registro" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="co.edu.ucundinamarca.negocio.registro.RegistroApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.CustomerServiceApplication" />
+      <item itemvalue="Spring Boot.LoginApplication" />
+      <item itemvalue="Spring Boot.MicroserviceEmailApplication" />
+      <item itemvalue="Spring Boot.RegistroApplication" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -78,6 +145,11 @@
       <option name="presentableId" value="Default" />
       <updated>1636374308868</updated>
       <workItem from="1636374322525" duration="2499000" />
+      <workItem from="1636379226426" duration="900000" />
+      <workItem from="1636380634485" duration="2316000" />
+      <workItem from="1636384565795" duration="6000" />
+      <workItem from="1636384875190" duration="2570000" />
+      <workItem from="1636389253376" duration="2646000" />
     </task>
     <servers />
   </component>

@@ -36,9 +36,9 @@ public class MailService {
         // This is the first_name variable that we created on the template
         personalization.addDynamicTemplateData("first_name", name);
         mail.addPersonalization(personalization);
-        mail.setTemplateId("xxxxxx");
+        mail.setTemplateId("X");
 
-        SendGrid sg = new SendGrid("XXX-XXX-XXXX");
+        SendGrid sg = new SendGrid("xxx");
         Request request = new Request();
         try {
             request.setMethod(Method.POST);
