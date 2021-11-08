@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="adc15c07-b12e-4b3f-92d5-c6fd637be77c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dominionegocio/reservaservice/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dominionegocio/reservaservice/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dominionegocio/reservaservice/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dominionegocio/reservaservice/target/classes/co/edu/ucundinamarca/negocio/reservaservice/ReservaServiceApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dominionegocio/reservaservice/target/classes/co/edu/ucundinamarca/negocio/reservaservice/config/CorsConfig$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dominionegocio/reservaservice/target/classes/co/edu/ucundinamarca/negocio/reservaservice/config/CorsConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dominionegocio/reservaservice/target/classes/co/edu/ucundinamarca/negocio/reservaservice/controller/CuentaController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dominionegocio/reservaservice/target/classes/co/edu/ucundinamarca/negocio/reservaservice/controller/HabitacionesController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dominionegocio/reservaservice/target/classes/co/edu/ucundinamarca/negocio/reservaservice/controller/PersonasController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dominionegocio/reservaservice/target/classes/co/edu/ucundinamarca/negocio/reservaservice/controller/ReservasController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dominionegocio/reservaservice/target/classes/co/edu/ucundinamarca/negocio/reservaservice/controller/UsuariosController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dominionegocio/reservaservice/target/classes/co/edu/ucundinamarca/negocio/reservaservice/entities/Cuenta.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dominionegocio/reservaservice/target/classes/co/edu/ucundinamarca/negocio/reservaservice/entities/GaleriaHabitacion.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dominionegocio/reservaservice/target/classes/co/edu/ucundinamarca/negocio/reservaservice/entities/Habitaciones.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dominionegocio/reservaservice/target/classes/co/edu/ucundinamarca/negocio/reservaservice/entities/Huespedes.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dominionegocio/reservaservice/target/classes/co/edu/ucundinamarca/negocio/reservaservice/entities/Perfil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dominionegocio/reservaservice/target/classes/co/edu/ucundinamarca/negocio/reservaservice/entities/Personas.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dominionegocio/reservaservice/target/classes/co/edu/ucundinamarca/negocio/reservaservice/entities/ReservaForm.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dominionegocio/reservaservice/target/classes/co/edu/ucundinamarca/negocio/reservaservice/entities/Reservaciones.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dominionegocio/reservaservice/target/classes/co/edu/ucundinamarca/negocio/reservaservice/entities/TipoHabitacion.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dominionegocio/reservaservice/target/classes/co/edu/ucundinamarca/negocio/reservaservice/entities/Usuarios.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dominionegocio/reservaservice/target/classes/co/edu/ucundinamarca/negocio/reservaservice/exceptions/ExceptionsHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dominionegocio/reservaservice/target/classes/co/edu/ucundinamarca/negocio/reservaservice/repository/CuentaRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dominionegocio/reservaservice/target/classes/co/edu/ucundinamarca/negocio/reservaservice/repository/HabitacionesRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dominionegocio/reservaservice/target/classes/co/edu/ucundinamarca/negocio/reservaservice/repository/HuespedesRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dominionegocio/reservaservice/target/classes/co/edu/ucundinamarca/negocio/reservaservice/repository/PerfilRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dominionegocio/reservaservice/target/classes/co/edu/ucundinamarca/negocio/reservaservice/repository/PersonasRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dominionegocio/reservaservice/target/classes/co/edu/ucundinamarca/negocio/reservaservice/repository/ReservacionesRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dominionegocio/reservaservice/target/classes/co/edu/ucundinamarca/negocio/reservaservice/repository/TipoHabitacionRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dominionegocio/reservaservice/target/classes/co/edu/ucundinamarca/negocio/reservaservice/repository/UsuariosRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dominionegocio/reservaservice/target/classes/co/edu/ucundinamarca/negocio/reservaservice/services/CuentaService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dominionegocio/reservaservice/target/classes/co/edu/ucundinamarca/negocio/reservaservice/services/HabitacionesService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dominionegocio/reservaservice/target/classes/co/edu/ucundinamarca/negocio/reservaservice/services/PersonasService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dominionegocio/reservaservice/target/classes/co/edu/ucundinamarca/negocio/reservaservice/services/ReservasService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dominionegocio/reservaservice/target/classes/co/edu/ucundinamarca/negocio/reservaservice/services/UsuariosService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dominionegocio/reservaservice/target/classes/co/edu/ucundinamarca/negocio/reservaservice/validators/MinDateToday.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dominionegocio/reservaservice/target/classes/co/edu/ucundinamarca/negocio/reservaservice/validators/MinDateTodayValidator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dominionegocio/reservaservice/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dominionegocio/reservaservice/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dominionegocio/reservaservice/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dominionegocio/reservaservice/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dominionegocio/reservaservice/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dominionegocio/reservaservice/target/reservaservice-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dominionegocio/reservaservice/target/surefire-reports/TEST-co.edu.ucundinamarca.negocio.reservaservice.ReservaserviceApplicationTests.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dominionegocio/reservaservice/target/surefire-reports/co.edu.ucundinamarca.negocio.reservaservice.ReservaserviceApplicationTests.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dominionegocio/reservaservice/target/test-classes/co/edu/ucundinamarca/negocio/reservaservice/ReservaserviceApplicationTests.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="20ejUKY7sxW90x5i1PvDZl7ia6q" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="customerservice" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="co.edu.ucundinamarca.negocio.customerservice.CustomerServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="adc15c07-b12e-4b3f-92d5-c6fd637be77c" name="Changes" comment="" />
+      <created>1636411962683</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1636411962683</updated>
+      <workItem from="1636411963857" duration="322000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
