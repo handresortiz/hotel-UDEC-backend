@@ -2,11 +2,13 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="customerservice" />
+        <module name="login" />
+        <module name="registro" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -14,6 +16,8 @@
       <module name="dominioinfraestructura" target="1.8" />
       <module name="dominionegocio" target="1.8" />
       <module name="Hotel-UDEC" target="1.8" />
+      <module name="login" target="1.8" />
+      <module name="registro" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

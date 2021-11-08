@@ -3,9 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Hotel-UDEC.iml" filepath="$PROJECT_DIR$/Hotel-UDEC.iml" />
-      <module fileurl="file://$PROJECT_DIR$/dominionegocio/customerservice/customerservice.iml" filepath="$PROJECT_DIR$/dominionegocio/customerservice/customerservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/dominioinfraestructura/dominioinfraestructura.iml" filepath="$PROJECT_DIR$/dominioinfraestructura/dominioinfraestructura.iml" />
       <module fileurl="file://$PROJECT_DIR$/dominionegocio/dominionegocio.iml" filepath="$PROJECT_DIR$/dominionegocio/dominionegocio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dominionegocio/login/login.iml" filepath="$PROJECT_DIR$/dominionegocio/login/login.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dominionegocio/registro/registro.iml" filepath="$PROJECT_DIR$/dominionegocio/registro/registro.iml" />
     </modules>
   </component>
 </project>
