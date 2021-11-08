@@ -3,8 +3,11 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
+        <option value="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/pom.xml" />
         <option value="$PROJECT_DIR$/Hotel-UDEC/pom.xml" />
+        <option value="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/login/pom.xml" />
         <option value="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/microservice-email/pom.xml" />
+        <option value="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/pom.xml" />
       </list>
     </option>
   </component>

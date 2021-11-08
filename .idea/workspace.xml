@@ -5,43 +5,68 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e3efa5a-0946-4158-a030-690229c3fe7d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy-datasource.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.jpb/persistence-units.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/login/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/login/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/login/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/login/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/login/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/login/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/login/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/login/src/main/java/co/edu/ucundinamarca/negocio/login/LoginApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/login/src/main/java/co/edu/ucundinamarca/negocio/login/controller/UsuarioController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/login/src/main/java/co/edu/ucundinamarca/negocio/login/model/Mensaje.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/login/src/main/java/co/edu/ucundinamarca/negocio/login/model/Usuario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/login/src/main/java/co/edu/ucundinamarca/negocio/login/repository/UsuarioRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/login/src/main/java/co/edu/ucundinamarca/negocio/login/service/IUsuarioService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/login/src/main/java/co/edu/ucundinamarca/negocio/login/service/UsurioService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/login/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/login/src/test/java/co/edu/ucundinamarca/negocio/login/LoginApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/src/main/java/co/edu/ucundinamarca/negocio/registro/RegistroApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/src/main/java/co/edu/ucundinamarca/negocio/registro/model/Perfil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/src/main/java/co/edu/ucundinamarca/negocio/registro/model/Persona.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/src/main/java/co/edu/ucundinamarca/negocio/registro/model/Usuario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/src/main/java/co/edu/ucundinamarca/negocio/registro/repository/PerfilRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/src/main/java/co/edu/ucundinamarca/negocio/registro/repository/PersonaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/src/main/java/co/edu/ucundinamarca/negocio/registro/repository/UsuarioRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/src/main/java/co/edu/ucundinamarca/negocio/registro/rest/Mensaje.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/src/main/java/co/edu/ucundinamarca/negocio/registro/rest/PerfilRest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/src/main/java/co/edu/ucundinamarca/negocio/registro/rest/PersonaRest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/src/main/java/co/edu/ucundinamarca/negocio/registro/rest/UsuarioRest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/src/main/java/co/edu/ucundinamarca/negocio/registro/service/IPerfilService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/src/main/java/co/edu/ucundinamarca/negocio/registro/service/IPersonaService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/src/main/java/co/edu/ucundinamarca/negocio/registro/service/IUsuarioService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/src/main/java/co/edu/ucundinamarca/negocio/registro/service/PerfilService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/src/main/java/co/edu/ucundinamarca/negocio/registro/service/PersonaService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/src/main/java/co/edu/ucundinamarca/negocio/registro/service/UsuarioService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/src/test/java/co/edu/ucundinamarca/negocio/registro/RegistroApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/dominionegocio.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/dominionegocio.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/login/login.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/login/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/login/target/classes/co/edu/ucundinamarca/negocio/login/LoginApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/login/target/classes/co/edu/ucundinamarca/negocio/login/controller/UsuarioController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/login/target/classes/co/edu/ucundinamarca/negocio/login/model/Mensaje.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/login/target/classes/co/edu/ucundinamarca/negocio/login/model/Usuario.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/login/target/classes/co/edu/ucundinamarca/negocio/login/repository/UsuarioRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/login/target/classes/co/edu/ucundinamarca/negocio/login/service/IUsuarioService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/login/target/classes/co/edu/ucundinamarca/negocio/login/service/UsurioService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/login/target/test-classes/co/edu/ucundinamarca/negocio/login/LoginApplicationTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/microservice-email/src/main/java/co/edu/ucundinamarca/negocio/microservice/email/service/MailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/microservice-email/src/main/java/co/edu/ucundinamarca/negocio/microservice/email/service/MailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/registro.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/target/classes/co/edu/ucundinamarca/negocio/registro/RegistroApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/target/classes/co/edu/ucundinamarca/negocio/registro/model/Perfil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/target/classes/co/edu/ucundinamarca/negocio/registro/model/Persona.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/target/classes/co/edu/ucundinamarca/negocio/registro/model/Usuario.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/target/classes/co/edu/ucundinamarca/negocio/registro/repository/PerfilRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/target/classes/co/edu/ucundinamarca/negocio/registro/repository/PersonaRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/target/classes/co/edu/ucundinamarca/negocio/registro/repository/UsuarioRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/target/classes/co/edu/ucundinamarca/negocio/registro/rest/Mensaje.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/target/classes/co/edu/ucundinamarca/negocio/registro/rest/PerfilRest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/target/classes/co/edu/ucundinamarca/negocio/registro/rest/PersonaRest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/target/classes/co/edu/ucundinamarca/negocio/registro/rest/UsuarioRest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/target/classes/co/edu/ucundinamarca/negocio/registro/service/IPerfilService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/target/classes/co/edu/ucundinamarca/negocio/registro/service/IPersonaService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/target/classes/co/edu/ucundinamarca/negocio/registro/service/IUsuarioService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/target/classes/co/edu/ucundinamarca/negocio/registro/service/PerfilService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/target/classes/co/edu/ucundinamarca/negocio/registro/service/PersonaService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/target/classes/co/edu/ucundinamarca/negocio/registro/service/UsuarioService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/target/test-classes/co/edu/ucundinamarca/negocio/registro/RegistroApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/.idea/discord.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/.idea/jpa-buddy.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/Hotel-UDEC.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominioinfraestructura/dominioinfraestructura.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/dominionegocio.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/microservice-email/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/microservice-email/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +174,7 @@
       <workItem from="1636380634485" duration="2316000" />
       <workItem from="1636384565795" duration="6000" />
       <workItem from="1636384875190" duration="2570000" />
-      <workItem from="1636389253376" duration="2646000" />
+      <workItem from="1636389253376" duration="3722000" />
     </task>
     <servers />
   </component>

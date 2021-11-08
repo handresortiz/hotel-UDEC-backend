@@ -3,7 +3,10 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/Hotel-UDEC/dominionegocio/customerservice/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Hotel-UDEC/dominionegocio/customerservice/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Hotel-UDEC/dominionegocio/login/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Hotel-UDEC/dominionegocio/login/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Hotel-UDEC/dominionegocio/microservice-email/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Hotel-UDEC/dominionegocio/microservice-email/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/src/main/resources" charset="UTF-8" />
   </component>
 </project>

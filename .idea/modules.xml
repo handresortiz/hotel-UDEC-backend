@@ -6,7 +6,9 @@
       <module fileurl="file://$PROJECT_DIR$/Hotel-UDEC/dominionegocio/customerservice/customerservice.iml" filepath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/customerservice/customerservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hotel-UDEC/dominioinfraestructura/dominioinfraestructura.iml" filepath="$PROJECT_DIR$/Hotel-UDEC/dominioinfraestructura/dominioinfraestructura.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hotel-UDEC/dominionegocio/dominionegocio.iml" filepath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/dominionegocio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hotel-UDEC/dominionegocio/login/login.iml" filepath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/login/login.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hotel-UDEC/dominionegocio/microservice-email/microservice-email.iml" filepath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/microservice-email/microservice-email.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/registro.iml" filepath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/registro.iml" />
     </modules>
   </component>
 </project>
