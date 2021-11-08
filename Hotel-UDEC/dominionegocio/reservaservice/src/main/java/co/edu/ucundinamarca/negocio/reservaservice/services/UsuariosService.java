@@ -1,6 +1,8 @@
 package co.edu.ucundinamarca.negocio.reservaservice.services;
 
+import co.edu.ucundinamarca.negocio.reservaservice.entities.Perfil;
 import co.edu.ucundinamarca.negocio.reservaservice.entities.Usuarios;
+import co.edu.ucundinamarca.negocio.reservaservice.repository.PerfilRepository;
 import co.edu.ucundinamarca.negocio.reservaservice.repository.UsuariosRepository;
 import io.swagger.models.auth.In;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,23 +14,27 @@ import java.util.Locale;
 public class UsuariosService {
 
     private final UsuariosRepository usuariosRepository;
+    private final PerfilRepository perfilRepository;
+
 
     @Autowired
-    public UsuariosService(UsuariosRepository usuariosRepository) {
+    public UsuariosService(UsuariosRepository usuariosRepository, PerfilRepository perfilRepository) {
         this.usuariosRepository = usuariosRepository;
+        this.perfilRepository = perfilRepository;
     }
 
-    public Usuarios getUsuarioById( Integer id ) {
+    public Usuarios getUsuarioById(Integer id ) {
         return usuariosRepository.findById( id ).get();
     }
     public Usuarios addUsuario(Usuarios usuario){
         return usuariosRepository.save(usuario);
     }
     public Usuarios addUsuarioFromHuespedes(Integer id_persona, String nombre, String apellido, Long clave){
+        Perfil perfilCliente = perfilRepository.findByNombre( "cliente" );
         String login = nombre+"."+apellido;
         Usuarios usuario = new Usuarios();
         usuario.setId_persona(id_persona);
-        usuario.setId_perfil(1);
+        usuario.setId_perfil(perfilCliente.getId_perfil());
         usuario.setLogin(login.toLowerCase());
         usuario.setClave(clave.toString());
 
