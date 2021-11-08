@@ -6,7 +6,6 @@
       <module fileurl="file://$PROJECT_DIR$/Hotel-UDEC/dominionegocio/customerservice/customerservice.iml" filepath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/customerservice/customerservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hotel-UDEC/dominioinfraestructura/dominioinfraestructura.iml" filepath="$PROJECT_DIR$/Hotel-UDEC/dominioinfraestructura/dominioinfraestructura.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hotel-UDEC/dominionegocio/dominionegocio.iml" filepath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/dominionegocio.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/hotel-UDEC-backend.iml" filepath="$PROJECT_DIR$/.idea/hotel-UDEC-backend.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hotel-UDEC/dominionegocio/login/login.iml" filepath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/login/login.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/registro.iml" filepath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/registro.iml" />
     </modules>
