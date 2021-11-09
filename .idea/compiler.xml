@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+<<<<<<< HEAD
         <module name="ServicioProducto" />
         <module name="ocupacionservice" />
         <module name="login" />
@@ -27,11 +28,30 @@
       <module name="registro" target="1.5" />
       <module name="reservaservice" target="1.5" />
       <module name="ServicioProducto" target="1.5" />
+=======
+        <module name="customerservice" />
+        <module name="factura" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="customerservice" target="1.8" />
+      <module name="dominioinfraestructura" target="1.8" />
+      <module name="dominionegocio" target="1.8" />
+      <module name="factura" target="1.8" />
+      <module name="facturaservice" target="1.8" />
+      <module name="facuturaservice" target="11" />
+      <module name="Hotel-UDEC" target="1.8" />
+>>>>>>> Feature-Developer-Factura
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+<<<<<<< HEAD
       <module name="ocupacionservice" options="-parameters" />
+=======
+      <module name="factura" options="" />
+      <module name="facuturaservice" options="-parameters" />
+>>>>>>> Feature-Developer-Factura
     </option>
   </component>
 </project>

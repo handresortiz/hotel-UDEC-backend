@@ -3,6 +3,7 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/pom.xml" />
         <option value="$PROJECT_DIR$/Hotel-UDEC/pom.xml" />
         <option value="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/login/pom.xml" />
@@ -11,6 +12,14 @@
         <option value="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/customerservice/pom.xml" />
         <option value="$PROJECT_DIR$/../../Hoteleria-Backend_4/pom.xml" />
         <option value="$PROJECT_DIR$/../../Proyecto2/ocupacionservice/pom.xml" />
+=======
+        <option value="$PROJECT_DIR$/Hotel-UDEC/pom.xml" />
+        <option value="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/customerservice/pom.xml" />
+        <option value="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/facutura/pom.xml" />
+        <option value="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/facuturaservice/pom.xml" />
+        <option value="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/customerservice/factura/pom.xml" />
+        <option value="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/factura/pom.xml" />
+>>>>>>> Feature-Developer-Factura
       </list>
     </option>
   </component>

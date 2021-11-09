@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="8e3efa5a-0946-4158-a030-690229c3fe7d" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/ocupacionservice/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/ocupacionservice/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
@@ -37,6 +38,9 @@
       <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/ocupacionservice/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/ocupacionservice/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/reservaservice/reservaservice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/reservaservice/reservaservice.iml" afterDir="false" />
     </list>
+=======
+    <list default="true" id="7b1444ab-876c-4d22-9ad1-4340b89f22d4" name="Changes" comment="" />
+>>>>>>> Feature-Developer-Factura
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,12 +52,17 @@
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
       <map>
+<<<<<<< HEAD
+=======
+        <entry key="JPA Inspector" value="true" />
+>>>>>>> Feature-Developer-Factura
         <entry key="JPA Palette" value="true" />
         <entry key="JPA Structure" value="true" />
       </map>
     </option>
     <option name="myId2Visible">
       <map>
+<<<<<<< HEAD
         <entry key="JPA Palette" value="true" />
         <entry key="JPA Structure" value="false" />
       </map>
@@ -78,18 +87,44 @@
     <property name="com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File" value="GitIgnore" />
     <property name="jdk.selected.JAVA_MODULE" value="11" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Proyecto2/ocupacionservice" />
+=======
+        <entry key="JPA Inspector" value="false" />
+        <entry key="JPA Palette" value="false" />
+        <entry key="JPA Structure" value="true" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectId" id="20guucHO6AMmaQlYhGcWygojxpK" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="jdk.selected.JAVA_MODULE" value="11" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/customerservice/pom.xml" />
+>>>>>>> Feature-Developer-Factura
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+<<<<<<< HEAD
     <property name="nodejs_package_manager_path" value="npm" />
+=======
+>>>>>>> Feature-Developer-Factura
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+<<<<<<< HEAD
       <recent name="C:\Users\57311\OneDrive\Escritorio\IngenieriaSoftware\hotel-UDEC-backend\Hotel-UDEC\dominionegocio" />
+=======
+      <recent name="C:\Users\Carlos Ducuara\hotel-facturacion-reportes\hotel-UDEC-backend\Hotel-UDEC\dominionegocio" />
+>>>>>>> Feature-Developer-Factura
     </key>
   </component>
   <component name="RunDashboard">
@@ -99,6 +134,7 @@
       </set>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="Spring Boot.OcupacionServiceApplication">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="customerservice" />
@@ -109,6 +145,18 @@
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
       <module name="customerservice" />
       <option name="filePath" />
+=======
+  <component name="RunManager" selected="Spring Boot.FacturaApplication">
+    <configuration name="CustomerServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="co.edu.ucundinamarca.negocio.customerservice.CustomerServiceApplication" />
+      <module name="customerservice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="co.edu.ucundinamarca.negocio.customerservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+>>>>>>> Feature-Developer-Factura
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -116,6 +164,7 @@
     <configuration name="CustomerServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="customerservice" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="co.edu.ucundinamarca.negocio.customerservice.CustomerServiceApplication" />
+<<<<<<< HEAD
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -130,12 +179,15 @@
     <configuration name="LoginApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="login" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="co.edu.ucundinamarca.negocio.login.LoginApplication" />
+=======
+>>>>>>> Feature-Developer-Factura
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SHORTEN_COMMAND_LINE" value="NONE" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="MicroserviceEmailApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="microservice-email" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="co.edu.ucundinamarca.negocio.microservice.email.MicroserviceEmailApplication" />
@@ -167,11 +219,17 @@
     <configuration name="ServicioProductoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="ServicioProducto" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="co.edu.ucundinamarca.negocio.ServicioProducto.ServicioProductoApplication" />
+=======
+    <configuration name="FacturaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="factura" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="co.edu.ucundinamarca.negocio.factura.FacturaApplication" />
+>>>>>>> Feature-Developer-Factura
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
+<<<<<<< HEAD
       <item itemvalue="Spring Boot.CustomerServiceApplication" />
       <item itemvalue="Spring Boot.LoginApplication" />
       <item itemvalue="Spring Boot.MicroserviceEmailApplication" />
@@ -181,10 +239,22 @@
       <item itemvalue="Spring Boot.OcupacionServiceApplication" />
       <item itemvalue="Spring Boot.HoteleriaBackendApplication" />
     </list>
+=======
+      <item itemvalue="Application.CustomerServiceApplication" />
+      <item itemvalue="Spring Boot.CustomerServiceApplication" />
+      <item itemvalue="Spring Boot.FacturaApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.CustomerServiceApplication" />
+      </list>
+    </recent_temporary>
+>>>>>>> Feature-Developer-Factura
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< HEAD
       <changelist id="8e3efa5a-0946-4158-a030-690229c3fe7d" name="Changes" comment="" />
       <created>1636374308868</created>
       <option name="number" value="Default" />
@@ -198,6 +268,14 @@
       <workItem from="1636389253376" duration="5322000" />
       <workItem from="1636436584564" duration="3387000" />
       <workItem from="1636458843395" duration="3199000" />
+=======
+      <changelist id="7b1444ab-876c-4d22-9ad1-4340b89f22d4" name="Changes" comment="" />
+      <created>1636478818416</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1636478818416</updated>
+      <workItem from="1636478824693" duration="1622000" />
+>>>>>>> Feature-Developer-Factura
     </task>
     <servers />
   </component>
