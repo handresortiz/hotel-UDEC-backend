@@ -166,7 +166,9 @@
         </plugins>
     </build>
     <modules>
-        <module>dominionegocio</module>
         <module>dominioinfraestructura</module>
+        <module>dominionegocio</module>
+        <module>dominionegocio/ocupacionservice</module>
+        <module>dominionegocio/ocupacionservice</module>
     </modules>
 </project>
