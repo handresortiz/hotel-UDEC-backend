@@ -12,6 +12,7 @@
     <artifactId>dominionegocio</artifactId>
     <packaging>pom</packaging>
     <modules>
+	<module>ServicioProducto</module>
         <module>customerservice</module>
         <module>reservaservice</module>
     </modules>
