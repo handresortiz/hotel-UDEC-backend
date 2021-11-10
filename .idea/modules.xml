@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Hotel-UDEC/Hotel-UDEC.iml" filepath="$PROJECT_DIR$/Hotel-UDEC/Hotel-UDEC.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Hotel-UDEC/dominionegocio/ServicioProducto/ServicioProducto.iml" filepath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/ServicioProducto/ServicioProducto.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Hotel-UDEC/dominionegocio/customerservice/customerservice.iml" filepath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/customerservice/customerservice.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Hotel-UDEC/dominioinfraestructura/dominioinfraestructura.iml" filepath="$PROJECT_DIR$/Hotel-UDEC/dominioinfraestructura/dominioinfraestructura.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Hotel-UDEC/dominionegocio/dominionegocio.iml" filepath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/dominionegocio.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Hotel-UDEC/dominionegocio/login/login.iml" filepath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/login/login.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Hotel-UDEC/dominionegocio/microservice-email/microservice-email.iml" filepath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/microservice-email/microservice-email.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../../Proyecto2/ocupacionservice/ocupacionservice.iml" filepath="$PROJECT_DIR$/../../Proyecto2/ocupacionservice/ocupacionservice.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/registro.iml" filepath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/registro.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Hotel-UDEC/dominionegocio/reservaservice/reservaservice.iml" filepath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/reservaservice/reservaservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/hotel-UDEC-backend.iml" filepath="$PROJECT_DIR$/.idea/hotel-UDEC-backend.iml" />
     </modules>
   </component>
 </project>

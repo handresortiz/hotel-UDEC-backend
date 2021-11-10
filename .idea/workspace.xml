@@ -1,45 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e3efa5a-0946-4158-a030-690229c3fe7d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/ocupacionservice/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/ocupacionservice/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/ocupacionservice/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/ocupacionservice/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/ocupacionservice/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/ocupacionservice/src/main/java/com/spring/spring/boot/hoteleria_backend/OcupacionServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/ocupacionservice/src/main/java/com/spring/spring/boot/hoteleria_backend/controllers/HabitacionRestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/ocupacionservice/src/main/java/com/spring/spring/boot/hoteleria_backend/models/entity/Cliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/ocupacionservice/src/main/java/com/spring/spring/boot/hoteleria_backend/models/entity/Estado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/ocupacionservice/src/main/java/com/spring/spring/boot/hoteleria_backend/models/entity/Habitacion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/ocupacionservice/src/main/java/com/spring/spring/boot/hoteleria_backend/models/entity/LogCambioEstado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/ocupacionservice/src/main/java/com/spring/spring/boot/hoteleria_backend/models/entity/Reserva.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/ocupacionservice/src/main/java/com/spring/spring/boot/hoteleria_backend/models/entity/Tipo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/ocupacionservice/src/main/java/com/spring/spring/boot/hoteleria_backend/models/repository/IHabitacionDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/ocupacionservice/src/main/java/com/spring/spring/boot/hoteleria_backend/models/repository/ILogEstadoHabitacionDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/ocupacionservice/src/main/java/com/spring/spring/boot/hoteleria_backend/models/repository/IReservaDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/ocupacionservice/src/main/java/com/spring/spring/boot/hoteleria_backend/service/HabitacionServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/ocupacionservice/src/main/java/com/spring/spring/boot/hoteleria_backend/service/IHabitacionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/ocupacionservice/src/main/java/com/spring/spring/boot/hoteleria_backend/service/IReservaService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/ocupacionservice/src/main/java/com/spring/spring/boot/hoteleria_backend/service/IReservaServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/ocupacionservice/src/main/resources/import.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/ocupacionservice/src/test/java/com/spring/spring/boot/hoteleria_backend/HoteleriaBackendApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/dominionegocio.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/dominionegocio.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/ocupacionservice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/ocupacionservice/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/ocupacionservice/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/ocupacionservice/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/reservaservice/reservaservice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/reservaservice/reservaservice.iml" afterDir="false" />
+    <list default="true" id="6ddf4b72-d4aa-4ccc-a680-5888f09cf2b6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/factura/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/factura/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/factura/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/factura/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/factura/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/factura/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/factura/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/factura/src/main/java/co/edu/ucundinamarca/negocio/factura/Controller/Ventas_controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/factura/src/main/java/co/edu/ucundinamarca/negocio/factura/FacturaApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/factura/src/main/java/co/edu/ucundinamarca/negocio/factura/entities/ventas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/factura/src/main/java/co/edu/ucundinamarca/negocio/factura/respository/ventasRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/factura/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/factura/src/test/java/co/edu/ucundinamarca/negocio/factura/FacturaApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/discord.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/hotel-UDEC-backend.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy-datasource.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sendgrid_java_http_client_4_3_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sendgrid_sendgrid_java_4_7_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_14.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk15on_1_69.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/Hotel-UDEC.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel-UDEC/Hotel-UDEC.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominioinfraestructura/dominioinfraestructura.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel-UDEC/dominioinfraestructura/dominioinfraestructura.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/.idea/workspace.xml" beforeDir="false" />
     </list>
-
-    <list default="true" id="8e3efa5a-0946-4158-a030-690229c3fe7d" name="Changes" comment="" />
-
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,175 +61,30 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="JpbToolWindowState">
-    <option name="myId2FirstActivated">
-      <map>
-        <entry key="JPA Palette" value="true" />
-        <entry key="JPA Structure" value="true" />
-      </map>
-    </option>
-    <option name="myId2Visible">
-      <map>
-        <entry key="JPA Palette" value="true" />
-        <entry key="JPA Structure" value="false" />
-      </map>
-    </option>
-  </component>
-  <component name="ProjectId" id="20dV2gOxURMm4BDecTEG2J1J8IO" />
+  <component name="ProjectId" id="20htjnMl153EzuOpRNrwvET3ekv" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
-    <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File" value="GitIgnore" />
-    <property name="jdk.selected.JAVA_MODULE" value="11" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Proyecto2/ocupacionservice" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\57311\OneDrive\Escritorio\IngenieriaSoftware\hotel-UDEC-backend\Hotel-UDEC\dominionegocio" />
-    </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="configurationTypes">
-      <set>
-        <option value="SpringBootApplicationConfigurationType" />
-      </set>
-    </option>
-  </component>
-  <component name="RunManager" selected="Spring Boot.OcupacionServiceApplication">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="customerservice" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="customerservice" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CustomerServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="customerservice" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="co.edu.ucundinamarca.negocio.customerservice.CustomerServiceApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HoteleriaBackendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="ocupacionservice" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.spring.spring.boot.hoteleria_backend.OcupacionServiceApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="login" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="co.edu.ucundinamarca.negocio.login.LoginApplication" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SHORTEN_COMMAND_LINE" value="NONE" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MicroserviceEmailApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="microservice-email" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="co.edu.ucundinamarca.negocio.microservice.email.MicroserviceEmailApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OcupacionServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="ocupacionservice" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.spring.spring.boot.hoteleria_backend.OcupacionServiceApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RegistroApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="registro" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="co.edu.ucundinamarca.negocio.registro.RegistroApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReservaServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="reservaservice" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="co.edu.ucundinamarca.negocio.reservaservice.ReservaServiceApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ServicioProductoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="ServicioProducto" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="co.edu.ucundinamarca.negocio.ServicioProducto.ServicioProductoApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Spring Boot.CustomerServiceApplication" />
-      <item itemvalue="Spring Boot.LoginApplication" />
-      <item itemvalue="Spring Boot.MicroserviceEmailApplication" />
-      <item itemvalue="Spring Boot.RegistroApplication" />
-      <item itemvalue="Spring Boot.ReservaServiceApplication" />
-      <item itemvalue="Spring Boot.ServicioProductoApplication" />
-      <item itemvalue="Spring Boot.OcupacionServiceApplication" />
-      <item itemvalue="Spring Boot.HoteleriaBackendApplication" />
-    </list>
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Hotel-UDEC" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="8e3efa5a-0946-4158-a030-690229c3fe7d" name="Changes" comment="" />
-      <created>1636374308868</created>
+      <changelist id="6ddf4b72-d4aa-4ccc-a680-5888f09cf2b6" name="Changes" comment="" />
+      <created>1636508790135</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1636374308868</updated>
-      <workItem from="1636374322525" duration="2499000" />
-      <workItem from="1636379226426" duration="900000" />
-      <workItem from="1636380634485" duration="2316000" />
-      <workItem from="1636384565795" duration="6000" />
-      <workItem from="1636384875190" duration="2570000" />
-      <workItem from="1636389253376" duration="5322000" />
-      <workItem from="1636436584564" duration="3387000" />
-      <workItem from="1636458843395" duration="3199000" />
+      <updated>1636508790135</updated>
+      <workItem from="1636508792828" duration="87000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
