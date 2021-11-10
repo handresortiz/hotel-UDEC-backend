@@ -17,21 +17,21 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="customerservice" target="1.5" />
+      <module name="customerservice" target="1.8" />
       <module name="dominioinfraestructura" target="1.8" />
-      <module name="dominionegocio" target="1.5" />
+      <module name="dominionegocio" target="1.8" />
       <module name="Hotel-UDEC" target="1.8" />
-      <module name="login" target="1.5" />
-      <module name="microservice-email" target="1.5" />
-      <module name="ocupacionservice" target="1.6" />
-      <module name="registro" target="1.5" />
-      <module name="reservaservice" target="1.5" />
-      <module name="ServicioProducto" target="1.5" />
+      <module name="login" target="1.8" />
+      <module name="microservice-email" target="1.8" />
+      <module name="ocupacionservice" target="1.8" />
+      <module name="registro" target="1.8" />
+      <module name="reservaservice" target="1.8" />
+      <module name="ServicioProducto" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="ocupacionservice" options="-parameters" />
+      <module name="ocupacionservice" options="" />
     </option>
   </component>
 </project>

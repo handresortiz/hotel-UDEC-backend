@@ -1,14 +1,14 @@
-package com.spring.spring.boot.hoteleria_backend.models.repository;
+package co.edu.ucundinamarca.negocio.ocupacionservice.models.repository;
 
 import java.util.List;
 
+import co.edu.ucundinamarca.negocio.ocupacionservice.models.entity.Reserva;
+import co.edu.ucundinamarca.negocio.ocupacionservice.models.entity.Tipo;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
-import com.spring.spring.boot.hoteleria_backend.models.entity.Estado;
-import com.spring.spring.boot.hoteleria_backend.models.entity.Habitacion;
-import com.spring.spring.boot.hoteleria_backend.models.entity.Reserva;
-import com.spring.spring.boot.hoteleria_backend.models.entity.Tipo;
+import co.edu.ucundinamarca.negocio.ocupacionservice.models.entity.Estado;
+import co.edu.ucundinamarca.negocio.ocupacionservice.models.entity.Habitacion;
 
 
 public interface IHabitacionDao extends JpaRepository<Habitacion,Long>{

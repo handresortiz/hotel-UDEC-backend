@@ -1,19 +1,19 @@
-package com.spring.spring.boot.hoteleria_backend.service;
+package co.edu.ucundinamarca.negocio.ocupacionservice.service;
 
 import java.util.List;
 
+import co.edu.ucundinamarca.negocio.ocupacionservice.models.entity.LogCambioEstado;
+import co.edu.ucundinamarca.negocio.ocupacionservice.models.entity.Reserva;
+import co.edu.ucundinamarca.negocio.ocupacionservice.models.entity.Tipo;
+import co.edu.ucundinamarca.negocio.ocupacionservice.models.repository.IHabitacionDao;
+import co.edu.ucundinamarca.negocio.ocupacionservice.models.repository.ILogEstadoHabitacionDao;
+import co.edu.ucundinamarca.negocio.ocupacionservice.models.repository.IReservaDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.spring.spring.boot.hoteleria_backend.models.repository.IHabitacionDao;
-import com.spring.spring.boot.hoteleria_backend.models.repository.ILogEstadoHabitacionDao;
-import com.spring.spring.boot.hoteleria_backend.models.repository.IReservaDao;
-import com.spring.spring.boot.hoteleria_backend.models.entity.Estado;
-import com.spring.spring.boot.hoteleria_backend.models.entity.Habitacion;
-import com.spring.spring.boot.hoteleria_backend.models.entity.LogCambioEstado;
-import com.spring.spring.boot.hoteleria_backend.models.entity.Reserva;
-import com.spring.spring.boot.hoteleria_backend.models.entity.Tipo;
+import co.edu.ucundinamarca.negocio.ocupacionservice.models.entity.Estado;
+import co.edu.ucundinamarca.negocio.ocupacionservice.models.entity.Habitacion;
 
 @Service
 public class HabitacionServiceImpl implements IHabitacionService{

@@ -1,9 +1,10 @@
-package com.spring.spring.boot.hoteleria_backend.controllers;
+package co.edu.ucundinamarca.negocio.ocupacionservice.controllers;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import co.edu.ucundinamarca.negocio.ocupacionservice.service.IHabitacionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
 import org.springframework.http.HttpStatus;
@@ -16,13 +17,12 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.spring.spring.boot.hoteleria_backend.models.entity.Estado;
-import com.spring.spring.boot.hoteleria_backend.models.entity.Habitacion;
-import com.spring.spring.boot.hoteleria_backend.models.entity.LogCambioEstado;
-import com.spring.spring.boot.hoteleria_backend.models.entity.Reserva;
-import com.spring.spring.boot.hoteleria_backend.models.entity.Tipo;
-import com.spring.spring.boot.hoteleria_backend.service.IHabitacionService;
-import com.spring.spring.boot.hoteleria_backend.service.IReservaService;
+import co.edu.ucundinamarca.negocio.ocupacionservice.models.entity.Estado;
+import co.edu.ucundinamarca.negocio.ocupacionservice.models.entity.Habitacion;
+import co.edu.ucundinamarca.negocio.ocupacionservice.models.entity.LogCambioEstado;
+import co.edu.ucundinamarca.negocio.ocupacionservice.models.entity.Reserva;
+import co.edu.ucundinamarca.negocio.ocupacionservice.models.entity.Tipo;
+import co.edu.ucundinamarca.negocio.ocupacionservice.service.IReservaService;
 
 @CrossOrigin(origins= {"http://localhost:4200"})
 @RestController

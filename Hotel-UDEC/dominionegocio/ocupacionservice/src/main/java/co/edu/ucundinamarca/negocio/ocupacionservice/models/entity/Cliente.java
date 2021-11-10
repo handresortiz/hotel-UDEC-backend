@@ -1,4 +1,4 @@
-package com.spring.spring.boot.hoteleria_backend.models.entity;
+package co.edu.ucundinamarca.negocio.ocupacionservice.models.entity;
 
 import java.io.Serializable;
 

@@ -1,10 +1,9 @@
-package com.spring.spring.boot.hoteleria_backend.service;
+package co.edu.ucundinamarca.negocio.ocupacionservice.service;
 
+import co.edu.ucundinamarca.negocio.ocupacionservice.models.entity.Reserva;
+import co.edu.ucundinamarca.negocio.ocupacionservice.models.repository.IReservaDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import com.spring.spring.boot.hoteleria_backend.models.repository.IReservaDao;
-import com.spring.spring.boot.hoteleria_backend.models.entity.Reserva;
 
 @Service
 public class IReservaServiceImpl implements IReservaService {

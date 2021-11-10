@@ -7,18 +7,18 @@ import springfox.documentation.builders.RequestHandlerSelectors;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
-@EnableSwagger2
+
 @SpringBootApplication
-public class OcupacionserviceApplication {
+@EnableSwagger2
+public class OcupacionServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(OcupacionserviceApplication.class, args);
+		SpringApplication.run(OcupacionServiceApplication.class, args);
 	}
-        @Bean
-    public Docket OcupacionserviceApi() {
-        return new Docket(DocumentationType.SWAGGER_2).select()
-                .apis( RequestHandlerSelectors.basePackage("co.edu.ucundinamarca.negocio.ocupacionservice")).build();
-    }
 
-
+	@Bean
+	public Docket ocupacionserviceApi() {
+		return new Docket(DocumentationType.SWAGGER_2).select()
+				.apis( RequestHandlerSelectors.basePackage("co.edu.ucundinamarca.negocio.ocupacionservice")).build();
+	}
 }

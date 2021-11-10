@@ -1,4 +1,4 @@
-package com.spring.spring.boot.hoteleria_backend;
+package co.edu.ucundinamarca.negocio.ocupacionservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,11 +1,11 @@
-package com.spring.spring.boot.hoteleria_backend.models.repository;
+package co.edu.ucundinamarca.negocio.ocupacionservice.models.repository;
 
 import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
-import com.spring.spring.boot.hoteleria_backend.models.entity.LogCambioEstado;
+import co.edu.ucundinamarca.negocio.ocupacionservice.models.entity.LogCambioEstado;
 
 public interface ILogEstadoHabitacionDao extends JpaRepository<LogCambioEstado,Long>{
 
