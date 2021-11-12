@@ -12,9 +12,15 @@
     <artifactId>dominionegocio</artifactId>
     <packaging>pom</packaging>
     <modules>
-	<module>ServicioProducto</module>
+	    <module>ServicioProducto</module>
         <module>customerservice</module>
         <module>reservaservice</module>
+        <module>login</module>
+        <module>registro</module>
+        <module>microservice-email</module>
+        <module>factura</module>
+        <module>ocupacionservice</module>
+        <module>checkinservice</module>
     </modules>
     <properties>
         <spring-cloud-dependencies.version>Hoxton.SR8</spring-cloud-dependencies.version>  
