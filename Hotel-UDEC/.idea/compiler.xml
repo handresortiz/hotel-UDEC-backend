@@ -11,7 +11,13 @@
         <module name="ocupacionservice" />
         <module name="customerservice" />
         <module name="reservaservice" />
+        <module name="parametricaservice" />
       </profile>
     </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="parametricaservice" options="" />
+    </option>
   </component>
 </project>
