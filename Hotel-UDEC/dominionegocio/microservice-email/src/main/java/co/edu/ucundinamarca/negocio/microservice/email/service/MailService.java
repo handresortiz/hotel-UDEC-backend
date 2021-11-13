@@ -11,6 +11,7 @@ import com.sendgrid.helpers.mail.objects.Email;
 import com.sendgrid.helpers.mail.objects.Personalization;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
@@ -21,7 +22,14 @@ import java.util.Map;
 @Service
 public class MailService {
 
+    private JWTService jwtService;
+
     private static final Logger logger = LoggerFactory.getLogger(MailService.class);
+
+    @Value("${spring.sendgrid.api-key}") String sendGripApiKey;
+
+    @Value("${sendgrid.template.id}") String templateId;
+
 
     public String sentTestTextEmail(String name, String To) throws IOException {
         // the sender email should be the same as we used to Create a Single Sender Verification
@@ -35,10 +43,11 @@ public class MailService {
         mail.setSubject("Email of verification");
         // This is the first_name variable that we created on the template
         personalization.addDynamicTemplateData("first_name", name);
+        //personalization.addHeader("token", jwtService.create(To));
         mail.addPersonalization(personalization);
-        mail.setTemplateId("X");
+        mail.setTemplateId(templateId);
 
-        SendGrid sg = new SendGrid("xxx");
+        SendGrid sg = new SendGrid(sendGripApiKey);
         Request request = new Request();
         try {
             request.setMethod(Method.POST);
