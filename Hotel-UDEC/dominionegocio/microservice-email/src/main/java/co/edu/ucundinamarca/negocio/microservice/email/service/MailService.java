@@ -11,6 +11,7 @@ import com.sendgrid.helpers.mail.objects.Email;
 import com.sendgrid.helpers.mail.objects.Personalization;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
@@ -22,6 +23,7 @@ import java.util.Map;
 @Service
 public class MailService {
 
+    @Autowired
     private JWTService jwtService;
 
     private static final Logger logger = LoggerFactory.getLogger(MailService.class);
@@ -43,7 +45,7 @@ public class MailService {
         mail.setSubject("Email of verification");
         // This is the first_name variable that we created on the template
         personalization.addDynamicTemplateData("first_name", name);
-        //personalization.addHeader("token", jwtService.create(To));
+        System.out.println(jwtService.create());
         mail.addPersonalization(personalization);
         mail.setTemplateId(templateId);
 

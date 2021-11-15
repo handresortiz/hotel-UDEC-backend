@@ -22,16 +22,15 @@ public class JWTServiceImpl implements JWTService {
 
     public static final String TOKEN_PREFIX =  "Bearer ";
 
-    public static final String HEADER_STRING = "Authorization";
+
 
 
     @Override
-    public String create(String email) throws JsonProcessingException {
+    public String create() throws JsonProcessingException {
 
         SecretKey secretKey = new SecretKeySpec(SECRET.getBytes(), SignatureAlgorithm.HS256.getJcaName());
 
         String token = Jwts.builder()
-                .setSubject(email)
                 .signWith(secretKey)
                 .setIssuedAt(new Date())
                 .setExpiration(new Date( System.currentTimeMillis() + EXPIRATION_DATE )) //Es dos horas en milisegundos

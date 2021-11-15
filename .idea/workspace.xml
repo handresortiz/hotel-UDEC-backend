@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ddf4b72-d4aa-4ccc-a680-5888f09cf2b6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/microservice-email/src/main/java/co/edu/ucundinamarca/negocio/microservice/email/service/JWTService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/microservice-email/src/main/java/co/edu/ucundinamarca/negocio/microservice/email/service/JWTServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/microservice-email/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/microservice-email/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/microservice-email/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/microservice-email/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/microservice-email/src/main/java/co/edu/ucundinamarca/negocio/microservice/email/service/JWTService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/microservice-email/src/main/java/co/edu/ucundinamarca/negocio/microservice/email/service/JWTService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/microservice-email/src/main/java/co/edu/ucundinamarca/negocio/microservice/email/service/JWTServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/microservice-email/src/main/java/co/edu/ucundinamarca/negocio/microservice/email/service/JWTServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/microservice-email/src/main/java/co/edu/ucundinamarca/negocio/microservice/email/service/MailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/microservice-email/src/main/java/co/edu/ucundinamarca/negocio/microservice/email/service/MailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/microservice-email/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/microservice-email/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,7 +209,8 @@
       <workItem from="1636690759721" duration="1851000" />
       <workItem from="1636721099496" duration="638000" />
       <workItem from="1636779095377" duration="6000" />
-      <workItem from="1636809301234" duration="4686000" />
+      <workItem from="1636809301234" duration="5346000" />
+      <workItem from="1636985775301" duration="3355000" />
     </task>
     <servers />
   </component>

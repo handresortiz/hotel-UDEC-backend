@@ -6,7 +6,7 @@ import org.springframework.security.core.Authentication;
 
 public interface JWTService {
 
-    public String create(String email) throws JsonProcessingException;
+    public String create() throws JsonProcessingException;
 
     public boolean validate(String token);
 
