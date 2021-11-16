@@ -34,13 +34,17 @@ public class UsuarioRest {
 
     @PostMapping ("/agregar")
     public ResponseEntity<Usuario> crear(@RequestBody Usuario usuario){
+        Boolean verificar=false;
         if(usuarioService.existsByLogin(usuario.getLogin())) {
             return new ResponseEntity(new Mensaje("el usuario ya existe"), HttpStatus.BAD_REQUEST);
         }
+            usuario.setVerificado_correo(verificar);
             usuario.setIdperfil( perfilService.endId() );
             usuario.setIdpersona( personaService.endId() );
             usuarioService.guardar(usuario);
-            return new ResponseEntity(new Mensaje("usuario creado"), HttpStatus.OK);
+
+            return new ResponseEntity(new Mensaje("usuario creado"), HttpStatus.OK) ;
+
 
     }
 

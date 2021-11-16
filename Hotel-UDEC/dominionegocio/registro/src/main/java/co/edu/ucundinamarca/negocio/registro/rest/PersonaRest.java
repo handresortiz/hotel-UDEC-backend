@@ -28,6 +28,7 @@ public class PersonaRest {
 
     @PostMapping("/agregar")
     public ResponseEntity<Persona> crear(@RequestBody Persona persona){
+        Persona personamostrar = null;
         if(personaService.existsByCorreo(persona.getCorreo()))
             return new ResponseEntity(new Mensaje("el correo ingresado ya existe"), HttpStatus.BAD_REQUEST);
 
@@ -35,13 +36,15 @@ public class PersonaRest {
             return new ResponseEntity(new Mensaje("la identificacion ingresada ya se encuentra registrada"), HttpStatus.BAD_REQUEST);
 
 
-        if(personaService.existsByTelefono(persona.getTelefono()))
-            return new ResponseEntity(new Mensaje("el telefono ya se encuentra registrado"), HttpStatus.BAD_REQUEST);
 
-        personaService.guardar(persona);
 
-        return new ResponseEntity(new Mensaje("persona creada"), HttpStatus.OK);
+        return ResponseEntity.status(HttpStatus.CREATED).body(personaService.guardar(persona));
+
+
     }
+
+
+
 
     @GetMapping("/listar")
     public Persona findEnd() {

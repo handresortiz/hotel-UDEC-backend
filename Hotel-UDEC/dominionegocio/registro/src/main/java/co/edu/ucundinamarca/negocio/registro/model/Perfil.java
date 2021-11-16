@@ -33,4 +33,6 @@ public class Perfil {
     private Timestamp fec_cambio;
     private Long id_usuario_cambio;
 
+
+
 }

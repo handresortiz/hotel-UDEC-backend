@@ -26,7 +26,6 @@ public class PerfilRest {
 
     @PostMapping("/agregar")
    public ResponseEntity <Perfil> create(@RequestBody Perfil perfil){
-
         perfilService.guardar(perfil);
         return new ResponseEntity(new Mensaje("perfil creado"), HttpStatus.OK);
     }

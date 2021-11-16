@@ -18,9 +18,11 @@ public class UsuarioController {
 
     @PostMapping("/validar")
     public ResponseEntity<Usuario> validar(@RequestBody Usuario usuario) {
-
         if (usuarioService.existsByLogin(usuario.getLogin()) && usuarioService.existsByClave(usuario.getClave())) {
             return new ResponseEntity(new Mensaje("ingreso correcto"), HttpStatus.OK);
+
+
+
         }
             return new ResponseEntity(new Mensaje("clave o usuario incorrecto"), HttpStatus.UNAUTHORIZED);
 
