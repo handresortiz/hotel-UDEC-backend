@@ -1,5 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="71ffb54a-a7cd-4bc7-9e6c-15293f0341f9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/dominionegocio/ocupacionservice/src/main/java/co/edu/ucundinamarca/negocio/ocupacionservice/models/entity/Habitaciones.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dominionegocio/ocupacionservice/src/main/java/co/edu/ucundinamarca/negocio/ocupacionservice/models/entity/Huespedes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dominionegocio/ocupacionservice/src/main/java/co/edu/ucundinamarca/negocio/ocupacionservice/models/entity/Personas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dominionegocio/ocupacionservice/src/main/java/co/edu/ucundinamarca/negocio/ocupacionservice/models/entity/Usuarios.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dominionegocio/ocupacionservice/src/main/java/co/edu/ucundinamarca/negocio/ocupacionservice/controllers/HabitacionRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dominionegocio/ocupacionservice/src/main/java/co/edu/ucundinamarca/negocio/ocupacionservice/controllers/HabitacionRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dominionegocio/ocupacionservice/src/main/java/co/edu/ucundinamarca/negocio/ocupacionservice/models/entity/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/dominionegocio/ocupacionservice/src/main/java/co/edu/ucundinamarca/negocio/ocupacionservice/models/entity/Cuenta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dominionegocio/ocupacionservice/src/main/java/co/edu/ucundinamarca/negocio/ocupacionservice/models/entity/Estado.java" beforeDir="false" afterPath="$PROJECT_DIR$/dominionegocio/ocupacionservice/src/main/java/co/edu/ucundinamarca/negocio/ocupacionservice/models/entity/GaleriaHabitacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dominionegocio/ocupacionservice/src/main/java/co/edu/ucundinamarca/negocio/ocupacionservice/models/entity/Habitacion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dominionegocio/ocupacionservice/src/main/java/co/edu/ucundinamarca/negocio/ocupacionservice/models/entity/LogCambioEstado.java" beforeDir="false" afterPath="$PROJECT_DIR$/dominionegocio/ocupacionservice/src/main/java/co/edu/ucundinamarca/negocio/ocupacionservice/models/entity/LogCambioEstado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dominionegocio/ocupacionservice/src/main/java/co/edu/ucundinamarca/negocio/ocupacionservice/models/entity/Reserva.java" beforeDir="false" afterPath="$PROJECT_DIR$/dominionegocio/ocupacionservice/src/main/java/co/edu/ucundinamarca/negocio/ocupacionservice/models/entity/Reservaciones.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dominionegocio/ocupacionservice/src/main/java/co/edu/ucundinamarca/negocio/ocupacionservice/models/entity/Tipo.java" beforeDir="false" afterPath="$PROJECT_DIR$/dominionegocio/ocupacionservice/src/main/java/co/edu/ucundinamarca/negocio/ocupacionservice/models/entity/TipoHabitacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dominionegocio/ocupacionservice/src/main/java/co/edu/ucundinamarca/negocio/ocupacionservice/models/repository/IHabitacionDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dominionegocio/ocupacionservice/src/main/java/co/edu/ucundinamarca/negocio/ocupacionservice/models/repository/IHabitacionDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dominionegocio/ocupacionservice/src/main/java/co/edu/ucundinamarca/negocio/ocupacionservice/models/repository/ILogEstadoHabitacionDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dominionegocio/ocupacionservice/src/main/java/co/edu/ucundinamarca/negocio/ocupacionservice/models/repository/ILogEstadoHabitacionDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dominionegocio/ocupacionservice/src/main/java/co/edu/ucundinamarca/negocio/ocupacionservice/models/repository/IReservaDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dominionegocio/ocupacionservice/src/main/java/co/edu/ucundinamarca/negocio/ocupacionservice/models/repository/IReservaDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dominionegocio/ocupacionservice/src/main/java/co/edu/ucundinamarca/negocio/ocupacionservice/service/HabitacionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dominionegocio/ocupacionservice/src/main/java/co/edu/ucundinamarca/negocio/ocupacionservice/service/HabitacionServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dominionegocio/ocupacionservice/src/main/java/co/edu/ucundinamarca/negocio/ocupacionservice/service/IHabitacionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/dominionegocio/ocupacionservice/src/main/java/co/edu/ucundinamarca/negocio/ocupacionservice/service/IHabitacionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dominionegocio/ocupacionservice/src/main/java/co/edu/ucundinamarca/negocio/ocupacionservice/service/IReservaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/dominionegocio/ocupacionservice/src/main/java/co/edu/ucundinamarca/negocio/ocupacionservice/service/IReservaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dominionegocio/ocupacionservice/src/main/java/co/edu/ucundinamarca/negocio/ocupacionservice/service/IReservaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dominionegocio/ocupacionservice/src/main/java/co/edu/ucundinamarca/negocio/ocupacionservice/service/IReservaServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dominionegocio/ocupacionservice/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/dominionegocio/ocupacionservice/src/main/resources/application.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="JPA Inspector" value="true" />
+        <entry key="JPA Palette" value="true" />
+        <entry key="JPA Structure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="JPA Inspector" value="false" />
+        <entry key="JPA Palette" value="false" />
+        <entry key="JPA Structure" value="true" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectId" id="20htw5wSK14IxHHvdyJ5ajF1co5" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../recuper/Hoteleria-Backend_5" />
+  </component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
@@ -30,5 +103,36 @@
         <item itemvalue="Spring Boot.OcupacionServiceApplication" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="71ffb54a-a7cd-4bc7-9e6c-15293f0341f9" name="Changes" comment="" />
+      <created>1636508884602</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1636508884602</updated>
+      <workItem from="1636508886171" duration="1215000" />
+      <workItem from="1636551038314" duration="1352000" />
+      <workItem from="1636641958472" duration="3103000" />
+      <workItem from="1636907468508" duration="2126000" />
+      <workItem from="1637029364910" duration="927000" />
+      <workItem from="1637071687282" duration="7159000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

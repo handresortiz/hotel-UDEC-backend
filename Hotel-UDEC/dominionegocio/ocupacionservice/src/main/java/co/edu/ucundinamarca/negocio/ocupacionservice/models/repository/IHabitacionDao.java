@@ -2,30 +2,25 @@ package co.edu.ucundinamarca.negocio.ocupacionservice.models.repository;
 
 import java.util.List;
 
-import co.edu.ucundinamarca.negocio.ocupacionservice.models.entity.Reserva;
-import co.edu.ucundinamarca.negocio.ocupacionservice.models.entity.Tipo;
+import co.edu.ucundinamarca.negocio.ocupacionservice.models.entity.Habitaciones;
+import co.edu.ucundinamarca.negocio.ocupacionservice.models.entity.Reservaciones;
+import co.edu.ucundinamarca.negocio.ocupacionservice.models.entity.TipoHabitacion;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
-import co.edu.ucundinamarca.negocio.ocupacionservice.models.entity.Estado;
-import co.edu.ucundinamarca.negocio.ocupacionservice.models.entity.Habitacion;
+import co.edu.ucundinamarca.negocio.ocupacionservice.models.entity.Habitaciones;
 
 
-public interface IHabitacionDao extends JpaRepository<Habitacion,Long>{
-	
-	@Query("from Reserva")
-	public List<Reserva> findAllReservas();
-	
-	@Query("select r from Reserva r where r.cliente.id = ?1")
-	public List<Reserva> findByIdClienteReserva(Long idCliente);
-	
-	@Query("from Tipo")
-	public List<Tipo> findAllTipos();
-	
-	@Query("from Estado")
-	public List<Estado> findAllEstados();
-	
-	@Query("select e from Estado e where e.id = ?1")
-	public Estado findByIdEstado(Long id);
-	
+public interface IHabitacionDao extends JpaRepository<Habitaciones,Integer>{
+
+	@Query("from Reservaciones")
+	public List<Reservaciones> findAllReservas();
+
+	@Query("from TipoHabitacion")
+	public List<TipoHabitacion> findAllTipos();
+
+	@Query("select h from Habitaciones h order by h.id_habitacion asc")
+	public List<Habitaciones> findAllHabitaciones();
+
+
 }

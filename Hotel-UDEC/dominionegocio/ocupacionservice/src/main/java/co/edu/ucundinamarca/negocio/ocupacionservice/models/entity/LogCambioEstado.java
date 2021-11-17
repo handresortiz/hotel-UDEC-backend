@@ -20,24 +20,23 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
 @Table(name = "log_cambio_estado")
-public class LogCambioEstado implements Serializable {
+public class LogCambioEstado{
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
+	private Integer id;
 
 	@ManyToOne(fetch=FetchType.LAZY)
 	@JoinColumn(name="id_habitacion")
-	//Ignoramos propiedades con del json , obtenemos datos de la entidad estado
 	@JsonIgnoreProperties(value={"hibernateLazyInitializer","handler"})
-	private Habitacion habitacion;
-	
+	private Habitaciones habitacion;
+
 	@Column(name = "estado")
-	private String estado;
+	private Character estado;
 
 	@Column(name = "fecha")
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date fecha;
-	
+
 	@Column(name = "observacion")
 	private String observacion;
 
@@ -46,27 +45,27 @@ public class LogCambioEstado implements Serializable {
 		fecha = new Date();
 	}
 
-	public Long getId() {
+	public Integer getId() {
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 
-	public Habitacion getHabitacion() {
+	public Habitaciones getHabitacion() {
 		return habitacion;
 	}
 
-	public void setHabitacion(Habitacion habitacion) {
+	public void setHabitacion(Habitaciones habitacion) {
 		this.habitacion = habitacion;
 	}
 
-	public String getEstado() {
+	public Character getEstado() {
 		return estado;
 	}
 
-	public void setEstado(String estado) {
+	public void setEstado(Character estado) {
 		this.estado = estado;
 	}
 
@@ -86,5 +85,4 @@ public class LogCambioEstado implements Serializable {
 		this.observacion = observacion;
 	}
 
-	private static final long serialVersionUID = 1L;
 }
