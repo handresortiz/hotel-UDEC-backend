@@ -148,7 +148,7 @@
                   <groupId>org.apache.maven.plugins</groupId>
                   <artifactId>maven-site-plugin</artifactId>
                   <version>3.9.1</version>
-                  <configuration>
+                  <configuration><
                       <locales>es,es</locales>
                   </configuration>
                   <executions>
@@ -166,7 +166,9 @@
         </plugins>
     </build>
     <modules>
-        <module>dominionegocio</module>
         <module>dominioinfraestructura</module>
+        <module>dominionegocio</module>
+        <module>dominionegocio/ocupacionservice</module>
+        <module>dominionegocio/ocupacionservice</module>
     </modules>
 </project>
