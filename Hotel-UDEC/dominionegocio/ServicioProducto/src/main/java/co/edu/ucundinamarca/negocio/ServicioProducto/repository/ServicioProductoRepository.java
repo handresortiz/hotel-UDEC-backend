@@ -15,7 +15,5 @@ import org.springframework.stereotype.Repository;
  */
 @Repository
 public interface ServicioProductoRepository extends JpaRepository<Producto, Long> {
-   
-    
-    
+
 }
