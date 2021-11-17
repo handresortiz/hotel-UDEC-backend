@@ -6,10 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="6ddf4b72-d4aa-4ccc-a680-5888f09cf2b6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/microservice-email/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/microservice-email/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/microservice-email/src/main/java/co/edu/ucundinamarca/negocio/microservice/email/controllers/EmailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/microservice-email/src/main/java/co/edu/ucundinamarca/negocio/microservice/email/controllers/EmailController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/microservice-email/src/main/java/co/edu/ucundinamarca/negocio/microservice/email/service/JWTService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/microservice-email/src/main/java/co/edu/ucundinamarca/negocio/microservice/email/service/JWTService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/microservice-email/src/main/java/co/edu/ucundinamarca/negocio/microservice/email/service/JWTServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/microservice-email/src/main/java/co/edu/ucundinamarca/negocio/microservice/email/service/JWTServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/microservice-email/src/main/java/co/edu/ucundinamarca/negocio/microservice/email/service/MailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/microservice-email/src/main/java/co/edu/ucundinamarca/negocio/microservice/email/service/MailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/microservice-email/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/microservice-email/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +52,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../spring-boot-jwt" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -210,7 +212,10 @@
       <workItem from="1636721099496" duration="638000" />
       <workItem from="1636779095377" duration="6000" />
       <workItem from="1636809301234" duration="5346000" />
-      <workItem from="1636985775301" duration="3355000" />
+      <workItem from="1636985775301" duration="6384000" />
+      <workItem from="1637068048189" duration="6388000" />
+      <workItem from="1637157187967" duration="7682000" />
+      <workItem from="1637182832050" duration="335000" />
     </task>
     <servers />
   </component>

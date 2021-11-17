@@ -45,7 +45,7 @@ public class MailService {
         mail.setSubject("Email of verification");
         // This is the first_name variable that we created on the template
         personalization.addDynamicTemplateData("first_name", name);
-        System.out.println(jwtService.create());
+        personalization.addDynamicTemplateData("token", jwtService.create());
         mail.addPersonalization(personalization);
         mail.setTemplateId(templateId);
 

@@ -2,7 +2,7 @@ package co.edu.ucundinamarca.negocio.microservice.email.service;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import io.jsonwebtoken.Claims;
-import org.springframework.security.core.Authentication;
+
 
 public interface JWTService {
 
@@ -13,5 +13,7 @@ public interface JWTService {
     public Claims getClaims(String token);
 
     public String resolve(String token);
+
+    public boolean equals(String token);
 
 }

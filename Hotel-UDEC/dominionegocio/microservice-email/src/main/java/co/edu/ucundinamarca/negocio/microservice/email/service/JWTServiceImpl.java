@@ -43,6 +43,7 @@ public class JWTServiceImpl implements JWTService {
     public boolean validate(String token) {
         Claims claims = null;
 
+
         try {
             getClaims(token);
             return true;
@@ -60,6 +61,11 @@ public class JWTServiceImpl implements JWTService {
                 .getBody();
 
         return claims;
+    }
+
+    @Override
+    public boolean equals(String token){
+        return token.equals(SECRET);
     }
 
     @Override
