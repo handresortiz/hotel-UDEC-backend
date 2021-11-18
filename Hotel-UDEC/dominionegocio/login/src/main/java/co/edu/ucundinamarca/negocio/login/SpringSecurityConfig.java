@@ -2,6 +2,7 @@ package co.edu.ucundinamarca.negocio.login;
 
 import co.edu.ucundinamarca.negocio.login.auth.handler.LoginSuccessHandler;
 import co.edu.ucundinamarca.negocio.login.model.service.JpaUserDetailsService;
+import co.edu.ucundinamarca.negocio.login.service.JWTService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -18,10 +19,14 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
     private LoginSuccessHandler successHandler;
 
     @Autowired
-    private BCryptPasswordEncoder passwordEncoder;
+    private JpaUserDetailsService userDetailsService;
 
     @Autowired
-    private JpaUserDetailsService userDetailsService;
+    private BCryptPasswordEncoder passwordEncoder;
+
+
+    @Autowired
+    private JWTService jwtService;
 
 
 
