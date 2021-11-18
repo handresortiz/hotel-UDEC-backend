@@ -28,7 +28,6 @@ public class PersonaRest {
 
     @PostMapping("/agregar")
     public ResponseEntity<Persona> crear(@RequestBody Persona persona){
-        Persona personamostrar = null;
         if(personaService.existsByCorreo(persona.getCorreo()))
             return new ResponseEntity(new Mensaje("el correo ingresado ya existe"), HttpStatus.BAD_REQUEST);
 
@@ -42,9 +41,6 @@ public class PersonaRest {
 
 
     }
-
-
-
 
     @GetMapping("/listar")
     public Persona findEnd() {

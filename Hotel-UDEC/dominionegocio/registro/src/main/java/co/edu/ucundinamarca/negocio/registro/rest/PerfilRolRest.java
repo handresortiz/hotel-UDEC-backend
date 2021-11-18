@@ -34,6 +34,8 @@ public class PerfilRolRest {
         return new ResponseEntity(new Mensaje("rol creado"), HttpStatus.OK);
 
     }
+
+
     @GetMapping("/listar")
     public PerfilRol findId() {
         return perfilRolService.endId();
