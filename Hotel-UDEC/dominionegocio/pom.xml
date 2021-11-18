@@ -16,6 +16,8 @@
 	<module>ServicioCategoria</module>
 	<module>ServicioProducto</module>
         <module>customerservice</module>
+        <module>ServicioVentas</module>
+        <module>ServicioDetalleVentas</module>
     </modules>
     <properties>
         <spring-cloud-dependencies.version>Hoxton.SR8</spring-cloud-dependencies.version>  

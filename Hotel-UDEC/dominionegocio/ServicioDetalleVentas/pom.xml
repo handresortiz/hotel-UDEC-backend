@@ -8,9 +8,9 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 	
-    <artifactId>ServicioCategoria</artifactId>
+    <artifactId>ServicioDetalleVentas</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>ServicioCategoria</name>
+    <name>ServicioDetalleVentas</name>
     <description>Demo project for Spring Boot</description>
 	
 </project>
