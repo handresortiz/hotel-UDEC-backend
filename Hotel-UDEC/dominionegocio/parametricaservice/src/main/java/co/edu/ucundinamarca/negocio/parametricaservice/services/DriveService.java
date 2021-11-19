@@ -14,7 +14,6 @@ import com.google.api.client.util.store.FileDataStoreFactory;
 import com.google.api.services.drive.Drive;
 import com.google.api.services.drive.DriveScopes;
 import com.google.api.services.drive.model.File;
-import com.google.api.services.drive.model.FileList;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -70,30 +69,7 @@ public class DriveService {
                 .build();
     }
 
-    public void test(){
-        try{
-            Drive service = this.getService();
-
-            // Print the names and IDs for up to 10 files.
-            FileList result = service.files().list()
-                    .setPageSize(10)
-                    .setFields("nextPageToken, files(id, name)")
-                    .execute();
-            List<File> files = result.getFiles();
-            if (files == null || files.isEmpty()) {
-                System.out.println("No files found.");
-            } else {
-                System.out.println("Files:");
-                for (File file : files) {
-                    System.out.printf("%s (%s)\n", file.getName(), file.getId());
-                }
-            }
-        }catch(Exception ex){
-            ex.printStackTrace();
-        }
-    }
-
-    private String createFolder( String name, String parent ){
+    public String createFolder( String name, String parent ){
         String folderID = "";
         try{
             Drive service = this.getService();
@@ -118,53 +94,42 @@ public class DriveService {
         return folderID;
     }
 
-    public List<String> uploadImages(MultipartFile[] images, String folder){
-
-        // Creating folder in Google Drive
-        String parentFolder = "1roYx2BPucuBgDI__CGZK9tLSH902E9qg"; // ID catalogo-habitaciones folder
-        String folderID = createFolder( folder, parentFolder );
-        List<String> urls = new ArrayList<>();
-
+    public File uploadImage(MultipartFile image, String name, String folderID){
+        File file = new File();
         try{
+            // Getting a client service
             Drive service = this.getService();
-            int count = 1;
 
-            for( MultipartFile image: images ){
+            // Getting extension file
+            String[] fileName = image.getOriginalFilename().split("\\.");
+            String ext = fileName[ fileName.length - 1 ];
 
-                // Getting extension file
-                String[] fileName = image.getOriginalFilename().split("\\.");
-                String ext = fileName[ fileName.length - 1 ];
+            // Creating temporal file
+            java.io.File tmp = new java.io.File("src/main/resources/tmp." + ext);
+            tmp.createNewFile();
 
-                // Creating temporal file
-                java.io.File tmp = new java.io.File("src/main/resources/tmp." + ext);
-                tmp.createNewFile();
+            // Transfering bytes multipartfile to file
+            FileOutputStream fout = new FileOutputStream(tmp);
+            fout.write( image.getBytes() );
+            fout.close();
 
-                // Transfering bytes multipartfile to file
-                FileOutputStream fout = new FileOutputStream(tmp);
-                fout.write( image.getBytes() );
-                fout.close();
+            // Creating file content of google drive
+            FileContent content = new FileContent(image.getContentType(), tmp);
 
-                // Creating file google drive
-                File file = new File();
-                FileContent content = new FileContent(image.getContentType(), tmp);
+            // Setting metadata and folder
+            file.setName(name + "." + ext);
+            file.setParents(Collections.singletonList( folderID ));
 
-                file.setName(count + "." + ext);
-                file.setParents(Collections.singletonList( folderID ));
+            // Uploading file to Google Drive
+            file = service.files().create(file, content).setFields("id").execute();
 
-                // Uploading file
-                file = service.files().create(file, content).setFields("id").execute();
+            // Deleting temporal file
+            tmp.delete();
 
-                // Deleting temporal file
-                tmp.delete();
-
-                urls.add( "https://drive.google.com/uc?export=view&id=" + file.getId() );
-                count++;
-            }
-
-        }catch( Exception ex ){
+        }catch(GeneralSecurityException | IOException ex){
             ex.printStackTrace();
         }
 
-        return urls;
+        return file;
     }
 }
