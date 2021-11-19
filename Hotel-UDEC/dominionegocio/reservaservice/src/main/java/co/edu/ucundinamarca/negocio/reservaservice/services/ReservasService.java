@@ -84,8 +84,8 @@ public class ReservasService {
     private long getDiferenciaFechas(Date fec_inicio, Date fec_fin){
         TimeUnit time = TimeUnit.DAYS;
         long diff = fec_fin.getTime() - fec_inicio.getTime();
-
-        return time.convert( diff, TimeUnit.MILLISECONDS );
+        diff = time.convert( diff, TimeUnit.MILLISECONDS );
+        return ( diff == 0 ? 1 : diff);
     }
 
     public List<Reservaciones> getListReservas(Integer[] id_habitaciones, Date fec_inicio, Date fec_fin){
