@@ -30,19 +30,24 @@ public class TipoHabitacionController {
         this.driveService = driveService;
     }
 
+    @GetMapping("/{id}")
+    public TipoHabitacion findById(@PathVariable("id") Integer id){
+        return tipoHabitacionService.findById( id );
+    }
+
     @PostMapping()
     public ResponseEntity<TipoHabitacion> crearTipoHabitacion(
             @Valid @RequestPart TipoHabitacion tipo,
             @RequestPart MultipartFile[] images
             ){
         //Validar imagenes
-        new ImageFilesValidator().isValid( images );
+        new ImageFilesValidator().isValid( images, 1 );
 
         // Crea el registro del tipo de habitacion
         tipo = tipoHabitacionService.createTipoHabitacion( tipo );
 
         //Sube las imagenes a Google Drive y obtiene una lista de las url
-        List<String> urls = galeriaHabitacionService.subirGaleriaADrive( images, tipo.getNom_tipo_habitacion() );
+        List<String> urls = galeriaHabitacionService.subirGaleriaADrive( images, tipo.getId_tipo_habitacion()+"" );
 
         // Guarda las url en la BD asociando el tipo de habitacion
         List<GaleriaHabitacion> galeria = galeriaHabitacionService.guardarGaleria( urls, tipo.getId_tipo_habitacion() );
@@ -50,6 +55,32 @@ public class TipoHabitacionController {
         tipo.setGaleria( galeria );
 
         return new ResponseEntity<TipoHabitacion>(tipo, HttpStatus.CREATED);
+    }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<TipoHabitacion> actualizarTipoHabitacion(
+            @PathVariable("id") Integer id,
+            @Valid @RequestPart TipoHabitacion tipo,
+            @RequestPart MultipartFile[] images
+    ){
+        // Validar imagenes
+        new ImageFilesValidator().isValid( images, 0 );
+
+        // Edita la galeria
+        List<GaleriaHabitacion> galeria = galeriaHabitacionService.editarGaleria(id, tipo.getGaleria());
+
+        // Subir nuevas imagenes
+        if(images.length > 0){
+            List<String> urls = galeriaHabitacionService.subirGaleriaADrive( images, id+"" );
+            galeria.addAll( galeriaHabitacionService.guardarGaleria( urls, id ) );
+        }
+
+        tipo.setGaleria( galeria );
+
+        // Modificar los datos del tipo de habitacion
+        tipoHabitacionService.actualizarTipo( id, tipo );
+
+        return new ResponseEntity<>( tipo, HttpStatus.OK );
     }
 
 }

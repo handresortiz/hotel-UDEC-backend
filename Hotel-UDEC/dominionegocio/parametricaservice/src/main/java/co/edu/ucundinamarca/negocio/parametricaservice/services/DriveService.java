@@ -14,6 +14,7 @@ import com.google.api.client.util.store.FileDataStoreFactory;
 import com.google.api.services.drive.Drive;
 import com.google.api.services.drive.DriveScopes;
 import com.google.api.services.drive.model.File;
+import com.google.api.services.drive.model.FileList;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -69,29 +70,64 @@ public class DriveService {
                 .build();
     }
 
+    public String getFolderID( String name ){
+        String folderID = "";
+
+        try{
+            Drive service = this.getService();
+            FileList result = service.files().list()
+                    .setQ("mimeType='application/vnd.google-apps.folder' and trashed = false")
+                    .setSpaces("drive")
+                    .execute();
+            for(File file: result.getFiles()){
+                if(file.getName().equals(name)){
+                    folderID = file.getId();
+                    break;
+                }
+            }
+        }catch(GeneralSecurityException | IOException ex){
+            ex.printStackTrace();
+        }
+
+        return folderID;
+    }
+
     public String createFolder( String name, String parent ){
         String folderID = "";
         try{
-            Drive service = this.getService();
-            File fileMetadata = new File();
-            fileMetadata.setName(name);
-            fileMetadata.setMimeType("application/vnd.google-apps.folder");
+            folderID = getFolderID( name );
+            if(folderID.equals("")){
+                Drive service = this.getService();
+                File fileMetadata = new File();
+                fileMetadata.setName(name);
+                fileMetadata.setMimeType("application/vnd.google-apps.folder");
 
-            if( parent != null ){
-                fileMetadata.setParents( Collections.singletonList( parent ) );
+                if( parent != null ){
+                    fileMetadata.setParents( Collections.singletonList( parent ) );
+                }
+
+                File file = service.files().create(fileMetadata)
+                        .setFields("id")
+                        .execute();
+
+                folderID = file.getId();
             }
-
-            File file = service.files().create(fileMetadata)
-                    .setFields("id")
-                    .execute();
-
-            folderID = file.getId();
-
         }catch ( GeneralSecurityException | IOException ex ){
             ex.printStackTrace();
         }
 
         return folderID;
+    }
+
+    public void removeImage(String fileID){
+        try{
+            // Getting a client service
+            Drive service = this.getService();
+
+            service.files().delete( fileID ).execute();
+        }catch(GeneralSecurityException | IOException ex){
+            ex.printStackTrace();
+        }
     }
 
     public File uploadImage(MultipartFile image, String name, String folderID){
@@ -125,7 +161,6 @@ public class DriveService {
 
             // Deleting temporal file
             tmp.delete();
-
         }catch(GeneralSecurityException | IOException ex){
             ex.printStackTrace();
         }

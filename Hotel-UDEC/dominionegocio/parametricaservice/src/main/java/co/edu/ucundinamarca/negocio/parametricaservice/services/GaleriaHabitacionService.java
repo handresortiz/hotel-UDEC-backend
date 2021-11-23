@@ -7,8 +7,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 @Service
 public class GaleriaHabitacionService {
@@ -20,6 +23,63 @@ public class GaleriaHabitacionService {
     public GaleriaHabitacionService(GaleriaHabitacionRepository galeriaRepository, DriveService driveService) {
         this.galeriaRepository = galeriaRepository;
         this.driveService = driveService;
+    }
+
+    public List<GaleriaHabitacion> obtenerGaleriaPorTipo(Integer id_tipo_habitacion){
+        return galeriaRepository.findAllByTipo( id_tipo_habitacion );
+    }
+
+    private String getDriveFileID(String url){
+        Pattern p = Pattern.compile("id=([^&]*)");
+        Matcher matcher = p.matcher(url);
+
+        return ( matcher.find() ? matcher.group(1) : "" );
+    }
+
+    public void removeFilesDrive(List<GaleriaHabitacion> galeria){
+
+        for (GaleriaHabitacion g: galeria){
+            String fileID = getDriveFileID( g.getUrl_imagen() );
+            if(fileID != ""){
+                driveService.removeImage( fileID );
+            }
+        }
+
+    }
+
+    public List<GaleriaHabitacion> editarGaleria(Integer id_tipo_habitacion, List<GaleriaHabitacion> g){
+        List<GaleriaHabitacion> galeria = obtenerGaleriaPorTipo( id_tipo_habitacion );
+        if (galeria.size() != g.size()){
+            List<GaleriaHabitacion> removed = new ArrayList<>();
+
+            // Compara la lista original con la traida y extrae las imagenes que fueron removidas
+            for(int i = 0; i < galeria.size(); i++){
+                boolean isRemoved = true;
+                for(int j = 0; j < g.size(); j++){
+                    if(galeria.get(i).getId() == g.get(j).getId()){
+                        isRemoved = false;
+                        break;
+                    }
+                }
+
+                if(isRemoved){
+                    removed.add( galeria.get(i) );
+                }
+            }
+
+            if(removed.size() > 0){
+                // De la lista de imagenes removidas se eliminan las que esten subidas en Google Drive
+                removeFilesDrive( removed );
+
+                // Se eliminan los registros de la BD
+                galeriaRepository.deleteAll( removed );
+
+                galeria = galeriaRepository.findAllByTipo( id_tipo_habitacion );
+            }
+
+        }
+
+        return galeria;
     }
 
     public List<GaleriaHabitacion> guardarGaleria(List<String> urls, Integer id_tipo_habitacion ){
@@ -39,7 +99,7 @@ public class GaleriaHabitacionService {
         List<String> urls = new ArrayList<>();
 
         // Crear carpeta en Google Drive
-        String parentFolder = "1roYx2BPucuBgDI__CGZK9tLSH902E9qg"; // ID catalogo-habitaciones folder
+        String parentFolder = driveService.getFolderID("catalogo-habitaciones");
         String folderID = driveService.createFolder( folder, parentFolder );
 
         // Subir imagenes a Drive
@@ -51,9 +111,5 @@ public class GaleriaHabitacionService {
         }
 
         return urls;
-    }
-
-    public void validarImagenes(MultipartFile[] images){
-
     }
 }
