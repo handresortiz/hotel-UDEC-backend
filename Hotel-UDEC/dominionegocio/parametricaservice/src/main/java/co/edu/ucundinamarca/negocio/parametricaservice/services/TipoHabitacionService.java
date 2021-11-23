@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
 import javax.transaction.Transactional;
+import java.util.List;
 
 @Service
 public class TipoHabitacionService {
@@ -39,6 +40,10 @@ public class TipoHabitacionService {
 
     public TipoHabitacion findById( Integer id ){
         return tipoHabitacionRepository.findById( id ).get();
+    }
+
+    public List<TipoHabitacion> findAll(){
+        return tipoHabitacionRepository.findAll();
     }
 
     @Transactional

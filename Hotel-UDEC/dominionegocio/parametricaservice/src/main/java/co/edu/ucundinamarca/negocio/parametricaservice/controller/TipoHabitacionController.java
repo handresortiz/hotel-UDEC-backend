@@ -40,6 +40,11 @@ public class TipoHabitacionController {
         return tipoHabitacionService.findById( id );
     }
 
+    @GetMapping()
+    public List<TipoHabitacion> findAll(){
+        return tipoHabitacionService.findAll();
+    }
+
     @PostMapping()
     public ResponseEntity<TipoHabitacion> crearTipoHabitacion(
             @Valid @RequestPart TipoHabitacion tipo,
