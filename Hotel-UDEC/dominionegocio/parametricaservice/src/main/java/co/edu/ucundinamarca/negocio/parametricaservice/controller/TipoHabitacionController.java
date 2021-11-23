@@ -51,5 +51,4 @@ public class TipoHabitacionController {
 
         return new ResponseEntity<TipoHabitacion>(tipo, HttpStatus.CREATED);
     }
-
 }

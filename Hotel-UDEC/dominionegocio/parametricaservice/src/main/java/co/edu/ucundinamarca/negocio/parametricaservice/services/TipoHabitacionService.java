@@ -15,7 +15,7 @@ public class TipoHabitacionService {
         this.tipoHabitacionRepository = tipoHabitacionRepository;
     }
 
-    public TipoHabitacion createTipoHabitacion( TipoHabitacion tipo ) {
-        return this.tipoHabitacionRepository.save( tipo );
+    public TipoHabitacion createTipoHabitacion(TipoHabitacion tipo) {
+        return this.tipoHabitacionRepository.save(tipo);
     }
 }
