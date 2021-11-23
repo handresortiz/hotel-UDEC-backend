@@ -1,6 +1,9 @@
 package co.edu.ucundinamarca.negocio.parametricaservice.entities;
 
 import javax.persistence.*;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import java.util.Date;
 import java.util.List;
 
@@ -11,11 +14,23 @@ public class TipoHabitacion {
     @GeneratedValue( strategy = GenerationType.IDENTITY)
     private Integer id_tipo_habitacion;
 
+    @NotNull( message = "El tipo de habitación debe tener un nombre" )
+    @Size(min = 3, max = 50, message = "El nombre del tipo de habitacion debe tener entre 3 y 50 carácteres")
     private String nom_tipo_habitacion;
+
     private String desc_tipo_habitacion;
+
+    @NotNull( message = "El tipo de habitación debe tener un precio por día")
+    @Min( value = 1, message = "El precio de la habitación debe ser mayor a 1" )
     private Long precio_habitacion;
+
+    @NotNull( message = "El tipo de habitación debe tener un número de adultos")
+    @Min( value = 1, message = "El número de adultos debe ser mayor o igual a 1" )
     private Integer num_adultos;
+
+    @Min( value = 0, message = "El número de niños debe ser mayor o igual a 0" )
     private Integer num_ninos;
+
     private Date fec_cambio;
     private Long id_usuario_cambio;
 

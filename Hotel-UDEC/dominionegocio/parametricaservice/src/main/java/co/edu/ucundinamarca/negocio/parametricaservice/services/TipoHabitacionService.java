@@ -1,5 +1,6 @@
 package co.edu.ucundinamarca.negocio.parametricaservice.services;
 
+import co.edu.ucundinamarca.negocio.parametricaservice.entities.TipoHabitacion;
 import co.edu.ucundinamarca.negocio.parametricaservice.repository.TipoHabitacionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -23,5 +24,8 @@ public class TipoHabitacionService {
             throw new ResponseStatusException( HttpStatus.BAD_REQUEST,
                     "Hay Habitaciones asignadas con la id de tipo habitacion numero " + id_tipo_habitacion);
         }
+    }
+    public TipoHabitacion createTipoHabitacion(TipoHabitacion tipo) {
+        return this.tipoHabitacionRepository.save(tipo);
     }
 }
