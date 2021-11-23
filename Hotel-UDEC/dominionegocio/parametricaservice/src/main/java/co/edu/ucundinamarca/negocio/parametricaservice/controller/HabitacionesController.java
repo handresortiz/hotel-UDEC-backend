@@ -9,6 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.util.List;
 
 @RestController
 @RequestMapping("api/habitacion")
@@ -39,5 +40,13 @@ public class HabitacionesController {
         return new ResponseEntity<>(newHabitacion, HttpStatus.CREATED);
     }
 
+    @GetMapping("/filtrar")
+    public ResponseEntity<List<Habitaciones>> filtrarHabitaciones(
+            @RequestParam(value = "num", required = false) String num,
+            @RequestParam(value = "tipo", required = false) Integer tipo
+    ){
+        List<Habitaciones> habitaciones = habitacionesService.obtenerHabPorFiltro( num, tipo );
+        return new ResponseEntity<>( habitaciones, HttpStatus.OK );
+    }
 
 }

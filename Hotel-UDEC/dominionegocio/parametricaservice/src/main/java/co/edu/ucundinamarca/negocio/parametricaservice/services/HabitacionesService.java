@@ -10,6 +10,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
 import javax.transaction.Transactional;
+import java.util.ArrayList;
+import java.util.List;
 
 @Service
 public class HabitacionesService {
@@ -84,6 +86,23 @@ public class HabitacionesService {
         }
         existsHabitacion( habitacion );
         return HabitacionesRepository.save(habitacion);
+    }
+
+    public List<Habitaciones> obtenerHabPorFiltro(String num, Integer tipo){
+        List<Habitaciones> habitaciones = new ArrayList<>();
+
+        if (num != null || tipo != null) {
+            if (tipo != null && num != null) {
+                habitaciones = HabitacionesRepository.filter( num, tipo );
+            }else if (num != null) {
+                habitaciones = HabitacionesRepository.filterByNum( num );
+            }else if(tipo != null){
+                habitaciones = HabitacionesRepository.filterByTipo( tipo );
+            }
+        }else {
+            habitaciones = HabitacionesRepository.findAll();
+        }
+        return habitaciones;
     }
 
 }
