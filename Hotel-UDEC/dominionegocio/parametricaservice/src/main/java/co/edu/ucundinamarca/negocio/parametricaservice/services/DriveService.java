@@ -119,7 +119,7 @@ public class DriveService {
         return folderID;
     }
 
-    public void removeImage(String fileID){
+    public void removeFile(String fileID){
         try{
             // Getting a client service
             Drive service = this.getService();

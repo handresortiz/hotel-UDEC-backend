@@ -41,10 +41,21 @@ public class GaleriaHabitacionService {
         for (GaleriaHabitacion g: galeria){
             String fileID = getDriveFileID( g.getUrl_imagen() );
             if(fileID != ""){
-                driveService.removeImage( fileID );
+                driveService.removeFile( fileID );
             }
         }
 
+    }
+
+    public void eliminarGaleria(Integer id_tipo_habitacion){
+        // Eliminar la carpeta del tipo de habitacion en Drive
+        String folderID = driveService.getFolderID(id_tipo_habitacion+"");
+        if(!folderID.isEmpty()){
+            driveService.removeFile( folderID );
+        }
+
+        // Eliminar los registros de galeria_habitacion en BD
+        galeriaRepository.deleteAllByTipo( id_tipo_habitacion );
     }
 
     public List<GaleriaHabitacion> editarGaleria(Integer id_tipo_habitacion, List<GaleriaHabitacion> g){

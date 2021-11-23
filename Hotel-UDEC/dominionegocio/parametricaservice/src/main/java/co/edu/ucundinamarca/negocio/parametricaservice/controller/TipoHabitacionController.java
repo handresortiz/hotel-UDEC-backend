@@ -6,6 +6,7 @@ import co.edu.ucundinamarca.negocio.parametricaservice.services.DriveService;
 import co.edu.ucundinamarca.negocio.parametricaservice.services.GaleriaHabitacionService;
 import co.edu.ucundinamarca.negocio.parametricaservice.services.TipoHabitacionService;
 import co.edu.ucundinamarca.negocio.parametricaservice.validators.ImageFilesValidator;
+import io.swagger.models.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -81,6 +82,14 @@ public class TipoHabitacionController {
         tipoHabitacionService.actualizarTipo( id, tipo );
 
         return new ResponseEntity<>( tipo, HttpStatus.OK );
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<TipoHabitacion> eliminarTipoHabitacion(
+            @PathVariable("id") Integer id
+    ){
+        TipoHabitacion tipo = tipoHabitacionService.eliminarTipoHabitacion( id );
+        return new ResponseEntity<>(tipo, HttpStatus.OK);
     }
 
 }

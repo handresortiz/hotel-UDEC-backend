@@ -13,10 +13,12 @@ import javax.transaction.Transactional;
 public class TipoHabitacionService {
 
     private final TipoHabitacionRepository tipoHabitacionRepository;
+    private final GaleriaHabitacionService galeriaService;
 
     @Autowired
-    public TipoHabitacionService(TipoHabitacionRepository tipoHabitacionRepository) {
+    public TipoHabitacionService(TipoHabitacionRepository tipoHabitacionRepository, GaleriaHabitacionService galeriaService) {
         this.tipoHabitacionRepository = tipoHabitacionRepository;
+        this.galeriaService = galeriaService;
     }
 
     public TipoHabitacion createTipoHabitacion( TipoHabitacion tipo ) {
@@ -51,6 +53,21 @@ public class TipoHabitacionService {
         if(t.getNum_ninos() != null){
             tipo.setNum_ninos( t.getNum_ninos() );
         }
+
+        return tipo;
+    }
+
+    public TipoHabitacion eliminarTipoHabitacion(Integer id){
+
+        TipoHabitacion tipo = tipoHabitacionRepository.findById( id )
+                                .orElseThrow(() -> new ResponseStatusException( HttpStatus.BAD_REQUEST, "Tipo de habitacion con id " + id +" no encontrado. "));
+
+
+        //Eliminar la galeria
+        galeriaService.eliminarGaleria( id );
+
+        //Eliminar el registro de tipo de habitacion
+        tipoHabitacionRepository.deleteById( id );
 
         return tipo;
     }
