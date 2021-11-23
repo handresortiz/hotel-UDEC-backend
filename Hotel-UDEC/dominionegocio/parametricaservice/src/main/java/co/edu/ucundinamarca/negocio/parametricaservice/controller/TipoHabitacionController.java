@@ -12,6 +12,10 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import javax.validation.Valid;
 import java.util.List;
@@ -88,6 +92,7 @@ public class TipoHabitacionController {
     public ResponseEntity<TipoHabitacion> eliminarTipoHabitacion(
             @PathVariable("id") Integer id
     ){
+
         TipoHabitacion tipo = tipoHabitacionService.eliminarTipoHabitacion( id );
         return new ResponseEntity<>(tipo, HttpStatus.OK);
     }

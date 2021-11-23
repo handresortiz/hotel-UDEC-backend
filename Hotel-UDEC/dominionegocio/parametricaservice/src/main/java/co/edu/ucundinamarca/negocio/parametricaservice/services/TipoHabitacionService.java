@@ -21,8 +21,20 @@ public class TipoHabitacionService {
         this.galeriaService = galeriaService;
     }
 
-    public TipoHabitacion createTipoHabitacion( TipoHabitacion tipo ) {
-        return this.tipoHabitacionRepository.save( tipo );
+    //delete Habitaciones Sin Asociacion Registro
+    public void verificarRegistrosTipo(Integer id_tipo_habitacion){
+
+        if(!tipoHabitacionRepository.existsById( id_tipo_habitacion )) {
+            throw new ResponseStatusException( HttpStatus.BAD_REQUEST, "Tipo de habitacion con id " + id_tipo_habitacion +" no encontrado. ");
+        }
+
+        if(tipoHabitacionRepository.existsByTipoHabitacion(id_tipo_habitacion)){
+            throw new ResponseStatusException( HttpStatus.BAD_REQUEST,
+                    "Hay Habitaciones asignadas con la id de tipo habitacion numero " + id_tipo_habitacion);
+        }
+    }
+    public TipoHabitacion createTipoHabitacion(TipoHabitacion tipo) {
+        return this.tipoHabitacionRepository.save(tipo);
     }
 
     public TipoHabitacion findById( Integer id ){
@@ -59,9 +71,9 @@ public class TipoHabitacionService {
 
     public TipoHabitacion eliminarTipoHabitacion(Integer id){
 
-        TipoHabitacion tipo = tipoHabitacionRepository.findById( id )
-                                .orElseThrow(() -> new ResponseStatusException( HttpStatus.BAD_REQUEST, "Tipo de habitacion con id " + id +" no encontrado. "));
+        verificarRegistrosTipo(id);
 
+        TipoHabitacion tipo = tipoHabitacionRepository.findById( id ).get();
 
         //Eliminar la galeria
         galeriaService.eliminarGaleria( id );

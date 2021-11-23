@@ -45,6 +45,10 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -100,6 +104,7 @@
       <workItem from="1637680810418" duration="346000" />
       <workItem from="1637682779914" duration="258000" />
       <workItem from="1637683413025" duration="1130000" />
+      <workItem from="1637686766758" duration="380000" />
     </task>
     <servers />
   </component>
