@@ -7,12 +7,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="chartsService" />
         <module name="login" />
         <module name="customerservice" />
         <module name="registro" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="chartsService" target="1.8" />
       <module name="customerservice" target="1.8" />
       <module name="dominioinfraestructura" target="1.8" />
       <module name="dominionegocio" target="1.8" />
@@ -21,5 +23,10 @@
       <module name="microservice-email" target="1.8" />
       <module name="registro" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="chartsService" options="" />
+    </option>
   </component>
 </project>

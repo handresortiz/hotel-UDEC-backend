@@ -4,7 +4,6 @@ import co.edu.ucundinamarca.negocio.login.model.Usuario;
 import co.edu.ucundinamarca.negocio.login.service.JWTService;
 import co.edu.ucundinamarca.negocio.login.service.JWTServiceImpl;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.springframework.boot.autoconfigure.security.SecurityProperties;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -67,7 +66,7 @@ public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilte
 
         String token = jwtService.create(authResult);
 
-        response.addHeader(JWTServiceImpl.HEADRE_STRING, JWTServiceImpl.TOKEN_PREFIX + token );
+        response.addHeader(JWTServiceImpl.HEADER_STRING, JWTServiceImpl.TOKEN_PREFIX + token );
 
         Map<String, Object> body = new HashMap<String, Object>();
         body.put("token",token);

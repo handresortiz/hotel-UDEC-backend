@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Hotel-UDEC/Hotel-UDEC.iml" filepath="$PROJECT_DIR$/Hotel-UDEC/Hotel-UDEC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hotel-UDEC/dominionegocio/chartsService/chartsService.iml" filepath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/chartsService/chartsService.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hotel-UDEC/dominionegocio/customerservice/customerservice.iml" filepath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/customerservice/customerservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hotel-UDEC/dominioinfraestructura/dominioinfraestructura.iml" filepath="$PROJECT_DIR$/Hotel-UDEC/dominioinfraestructura/dominioinfraestructura.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hotel-UDEC/dominionegocio/dominionegocio.iml" filepath="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/dominionegocio.iml" />
