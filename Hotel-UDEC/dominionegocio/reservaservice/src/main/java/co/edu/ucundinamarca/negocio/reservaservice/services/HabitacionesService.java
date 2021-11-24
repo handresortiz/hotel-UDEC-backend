@@ -9,6 +9,7 @@ import co.edu.ucundinamarca.negocio.reservaservice.repository.TipoHabitacionRepo
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -72,5 +73,11 @@ public class HabitacionesService {
                                                                     : false) );
 
         return tiposHabitacion;
+    }
+
+    @Transactional
+    public void actualizarEstadoHab( Integer id, Character estado ){
+        Habitaciones habitacion = habitacionesRepository.findById( id ).get();
+        habitacion.setEstado( estado );
     }
 }

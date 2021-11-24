@@ -21,15 +21,18 @@ public class ReservasService {
     private final HuespedesRepository huespedesRepository;
     private final ReservacionesRepository reservacionesRepository;
     private final HabitacionesRepository habitacionesRepository;
+    private final HabitacionesService habitacionesService;
 
     @Autowired
     public ReservasService(HuespedesRepository huespedesRepository,
                            PersonasRepository personasRepository,
                            ReservacionesRepository reservacionesRepository,
-                           HabitacionesRepository habitacionesRepository) {
+                           HabitacionesRepository habitacionesRepository,
+                           HabitacionesService habitacionesService) {
         this.huespedesRepository = huespedesRepository;
         this.reservacionesRepository = reservacionesRepository;
         this.habitacionesRepository = habitacionesRepository;
+        this.habitacionesService = habitacionesService;
     }
 
     public Huespedes getHuespedById( Integer id ) {
@@ -122,7 +125,10 @@ public class ReservasService {
     }
 
     public List<Reservaciones> registrarReservas( List<Reservaciones> reservas, Cuenta cuenta ){
-        reservas.forEach( r -> r.setCuenta( cuenta ) );
+        reservas.forEach( r -> {
+            habitacionesService.actualizarEstadoHab( r.getHabitacion().getId_habitacion(), 'R' );
+            r.setCuenta( cuenta );
+        } );
         return reservacionesRepository.saveAll( reservas );
     }
 }
