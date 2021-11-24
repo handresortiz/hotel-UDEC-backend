@@ -12,7 +12,7 @@ public class Usuarios {
     @GeneratedValue( strategy = GenerationType.IDENTITY)
     private Integer id_usuario;
 
-    @OneToOne
+    @ManyToOne
     @JoinColumn( name = "id_persona" )
     private Personas persona;
 
