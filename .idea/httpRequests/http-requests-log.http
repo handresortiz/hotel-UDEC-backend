@@ -1,0 +1,146 @@
+POST http://127.0.0.1:8101/login/validar/admin/admin
+
+###
+
+POST http://127.0.0.1:8101/login/validar/admin/admin
+
+###
+
+POST http://localhost:8101/login/validar/admin/admin
+
+###
+
+POST http://localhost:8101/login/validar/admin/admin
+
+###
+
+POST http://localhost:8101/login/validar/asd/asd
+
+###
+
+GET http://127.0.0.1:8104/chart/reservaciones
+
+<> 2021-11-23T134323.200.json
+
+###
+
+GET http://127.0.0.1:8104/chart/reservaciones
+
+<> 2021-11-23T134321.200.json
+
+###
+
+GET http://localhost:8104/chart/ventas/month
+
+<> 2021-11-23T132939.200.json
+
+###
+
+GET http://localhost:8104/chart/disponible
+
+<> 2021-11-23T132726.200.json
+
+###
+
+GET http://localhost:8104/chart/habitaciones
+
+<> 2021-11-23T132720.200.json
+
+###
+
+GET http://localhost:8104/chart/ocupacion
+
+<> 2021-11-23T132016.200.json
+
+###
+
+GET http://localhost:8104/chart/disponible
+
+<> 2021-11-23T132008.200.json
+
+###
+
+GET http://localhost:8104/chart/servicios
+
+<> 2021-11-23T131951.200.json
+
+###
+
+GET http://localhost:8104/chart/servicios/month
+
+<> 2021-11-23T131942.200.json
+
+###
+
+GET http://localhost:8104/chart/ventas/month
+
+<> 2021-11-23T123949.200.json
+
+###
+
+GET http://localhost:8104/chart/ventas/month
+
+<> 2021-11-23T123455.200.json
+
+###
+
+GET http://localhost:8104/chart/ventas
+
+<> 2021-11-23T121112.200.json
+
+###
+
+GET http://localhost:8104/chart/ocupacion
+
+<> 2021-11-23T114351.200.json
+
+###
+
+GET http://localhost:8104/chart/ocupacion
+
+<> 2021-11-23T114346.200.json
+
+###
+
+GET http://localhost:8104/chart/habitaciones
+
+<> 2021-11-23T114339.200.json
+
+###
+
+GET http://localhost:8104/chart/disponible
+
+<> 2021-11-23T114330.200.json
+
+###
+
+GET http://localhost:8104/chart/ocupacion
+
+<> 2021-11-23T113226.200.json
+
+###
+
+GET http://localhost:8104/chart/habitaciones
+
+<> 2021-11-23T113217.200.json
+
+###
+
+GET http://localhost:8104/chart/reservaciones
+
+<> 2021-11-23T102438.200.json
+
+###
+
+GET http://localhost:8104/chart/reservaciones/month
+
+<> 2021-11-23T102248.200.json
+
+###
+
+GET http://localhost:8104/chart/reservaciones/month
+
+<> 2021-11-23T102148.200.json
+
+###
+
