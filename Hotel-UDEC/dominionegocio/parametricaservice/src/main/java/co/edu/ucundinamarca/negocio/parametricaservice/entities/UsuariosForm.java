@@ -9,7 +9,7 @@ public class UsuariosForm {
     @NotNull
     @Valid
     private Personas persona;
-    @NotNull(message = "el id del perfil no debe estar en null")
+    @NotNull(message = "el id del perfil no debe estar vacío")
     private Integer id_perfil;
     //@NotNull(message = "El login del usuario no debe estar en null")
     private String login;

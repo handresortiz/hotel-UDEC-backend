@@ -13,11 +13,11 @@ public class Habitaciones {
     @GeneratedValue( strategy = GenerationType.IDENTITY )
     private Integer id_habitacion;
 
-    @NotNull(message = "El Tipo de Hbaitacion no debe ser null")
+    @NotNull(message = "El id del tipo de habitacion no debe estar vacio")
     private Integer id_tipo_habitacion;
 
-    @Max(value = 9999,message = "El numero de la Habitacion no puede superar las 4 cifras")
-    @Min(value = 1,message = "El numero de la Habitacion debe ser mayor a 1")
+    @Max(value = 9999,message = "El numero de la habitacion no puede superar las 4 cifras")
+    @Min(value = 1,message = "El numero de la habitacion debe ser mayor a 1")
     private Long num_habitacion;
 
     private Date fec_cambio;

@@ -17,7 +17,7 @@ public class Usuarios {
     private Personas persona;
 
     @OneToOne
-    @NotNull(message = "El perfil no puede estar en null")
+    @NotNull(message = "El perfil no puede estar vacío")
     @JoinColumn( name = "id_perfil" )
     private Perfil perfil;
 
