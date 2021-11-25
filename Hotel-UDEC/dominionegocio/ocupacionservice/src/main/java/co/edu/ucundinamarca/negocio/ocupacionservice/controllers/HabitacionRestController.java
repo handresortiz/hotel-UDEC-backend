@@ -23,7 +23,7 @@ import co.edu.ucundinamarca.negocio.ocupacionservice.models.entity.TipoHabitacio
 import co.edu.ucundinamarca.negocio.ocupacionservice.service.IHabitacionService;
 import co.edu.ucundinamarca.negocio.ocupacionservice.service.IReservaService;
 
-@CrossOrigin(origins= {"http://localhost:4200"})
+@CrossOrigin(origins= {"*"})
 @RestController
 @RequestMapping("/api")
 public class HabitacionRestController {
@@ -177,7 +177,6 @@ public class HabitacionRestController {
 		try {
 			habitacionActual = habitacionService.findById(idhabitacion);
 			if (habitacionActual != null) {
-
 				if (estado) {
 					habitacionActual.setFec_cambio(new Date());
 					habitacionActual.setMantenimiento(true);
@@ -189,15 +188,26 @@ public class HabitacionRestController {
 					logCambio.setObservacion("Se cambio el estado a " + habitacionUpdated.getEstado() + " con exito.");
 					habitacionService.save(logCambio);
 				} else {
-					habitacionActual.setFec_cambio(new Date());
-					habitacionActual.setMantenimiento(false);
-					habitacionActual.setEstado('D');
-					habitacionUpdated = habitacionService.save(habitacionActual);
-					logCambio = new LogCambioEstado();
-					logCambio.setHabitacion(habitacionUpdated);
-					logCambio.setEstado(habitacionUpdated.getEstado());
-					logCambio.setObservacion("Se cambio el estado a " + habitacionUpdated.getEstado() + " con exito.");
-					habitacionService.save(logCambio);
+					if (habitacionActual.getLimpieza() == true){
+						habitacionActual.setEstado('L');
+						habitacionActual.setMantenimiento(false);
+						habitacionUpdated = habitacionService.save(habitacionActual);
+						logCambio = new LogCambioEstado();
+						logCambio.setHabitacion(habitacionUpdated);
+						logCambio.setEstado(habitacionUpdated.getEstado());
+						logCambio.setObservacion("Se cambio el estado a " + habitacionUpdated.getEstado() + " con exito.");
+						habitacionService.save(logCambio);
+					}else {
+						habitacionActual.setFec_cambio(new Date());
+						habitacionActual.setMantenimiento(false);
+						habitacionActual.setEstado('D');
+						habitacionUpdated = habitacionService.save(habitacionActual);
+						logCambio = new LogCambioEstado();
+						logCambio.setHabitacion(habitacionUpdated);
+						logCambio.setEstado(habitacionUpdated.getEstado());
+						logCambio.setObservacion("Se cambio el estado a " + habitacionUpdated.getEstado() + " con exito.");
+						habitacionService.save(logCambio);
+					}
 				}
 			} else {
 				habitacionActual = null;
@@ -228,15 +238,26 @@ public class HabitacionRestController {
 					logCambio.setObservacion("Se cambio el estado a " + habitacionUpdated.getEstado() + " con exito.");
 					habitacionService.save(logCambio);
 				} else {
-					habitacionActual.setFec_cambio(new Date());
-					habitacionActual.setLimpieza(false);
-					habitacionActual.setEstado('D');
-					habitacionUpdated = habitacionService.save(habitacionActual);
-					logCambio = new LogCambioEstado();
-					logCambio.setHabitacion(habitacionUpdated);
-					logCambio.setEstado(habitacionUpdated.getEstado());
-					logCambio.setObservacion("Se cambio el estado a " + habitacionUpdated.getEstado() + " con exito.");
-					habitacionService.save(logCambio);
+					if (habitacionActual.getMantenimiento() == true){
+						habitacionActual.setLimpieza(false);
+						habitacionActual.setEstado('M');
+						habitacionUpdated = habitacionService.save(habitacionActual);
+						logCambio = new LogCambioEstado();
+						logCambio.setHabitacion(habitacionUpdated);
+						logCambio.setEstado(habitacionUpdated.getEstado());
+						logCambio.setObservacion("Se cambio el estado a " + habitacionUpdated.getEstado() + " con exito.");
+						habitacionService.save(logCambio);
+					}else {
+						habitacionActual.setFec_cambio(new Date());
+						habitacionActual.setLimpieza(false);
+						habitacionActual.setEstado('D');
+						habitacionUpdated = habitacionService.save(habitacionActual);
+						logCambio = new LogCambioEstado();
+						logCambio.setHabitacion(habitacionUpdated);
+						logCambio.setEstado(habitacionUpdated.getEstado());
+						logCambio.setObservacion("Se cambio el estado a " + habitacionUpdated.getEstado() + " con exito.");
+						habitacionService.save(logCambio);
+					}
 				}
 			} else {
 				habitacionActual = null;
@@ -252,5 +273,5 @@ public class HabitacionRestController {
 	public List<LogCambioEstado> findAllLogCambioEstado(@PathVariable Integer id) {
 		return habitacionService.findAllLogCambioEstado(id);
 	}
-}
 
+}
