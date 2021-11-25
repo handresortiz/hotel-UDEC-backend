@@ -153,7 +153,10 @@ public class AuthController {
         return ResponseEntity.ok(new MessageResponse("Te has registrado exitosamente!"));
     }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1febac2d650993ee7c33fe8fd84a950161732a9f
     @GetMapping("/credentials")
     public ResponseEntity<?> getCredentials(@RequestParam String email){
         return ResponseEntity.ok( usuarioRepository.findByLogin(email));
