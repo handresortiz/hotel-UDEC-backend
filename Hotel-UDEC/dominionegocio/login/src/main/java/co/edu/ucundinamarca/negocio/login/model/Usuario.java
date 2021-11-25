@@ -2,16 +2,16 @@ package co.edu.ucundinamarca.negocio.login.model;
 
 import lombok.Getter;
 import lombok.Setter;
-import org.hibernate.annotations.ColumnDefault;
-
 import javax.persistence.*;
+import java.io.Serializable;
+import java.util.List;
 
 
 @Getter
 @Setter
 @Entity
 @Table(name="usuarios")
-public class Usuario{
+public class Usuario implements Serializable {
 
 
     @Id
@@ -26,12 +26,23 @@ public class Usuario{
     @JoinColumn(name="id_persona")
     private Persona idpersona;
 
-    @ManyToOne
-    @JoinColumn(name="id_perfil")
-    private Perfil idperfil;
+    @OneToMany
+    @JoinColumn(name="id_rol")
+    private List<Rol> roles;
 
     public Usuario() {
 
+    }
+
+    public Usuario( String clave, String login, Persona idpersona) {
+        this.clave = clave;
+        this.login = login;
+        this.idpersona = idpersona;
+    }
+
+    public Usuario(String clave, String login){
+        this.login = login;
+        this.clave = clave;
     }
 
     public Usuario(Long id_usuario, String login, String clave) {
@@ -39,6 +50,8 @@ public class Usuario{
         this.clave = clave;
         this.id_usuario=id_usuario;
     }
+
+
 
 
 

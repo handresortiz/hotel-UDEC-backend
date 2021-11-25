@@ -4,6 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.sql.Timestamp;
 
 @Entity
 @Table(name="roles")
@@ -13,8 +14,21 @@ public class Rol {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(columnDefinition = "serial")
-    private Long id_rol;
-    private String nom_rol;
+    @Column(name = "id_rol", columnDefinition = "serial")
+    private Long idRol;
 
+//    @Enumerated(EnumType.STRING)
+    @Column(name = "nom_rol",length = 19)
+    private String nomRol;
+
+    private String desc_rol;
+
+    private Timestamp fec_Cambio;
+
+    @ManyToOne
+    @JoinColumn(name = "id_usuario")
+    private Usuario id_usuario;
+
+    public Rol() {
+    }
 }
