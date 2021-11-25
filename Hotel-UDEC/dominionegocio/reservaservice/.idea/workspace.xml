@@ -5,52 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ee269c9-0b23-4859-8883-c99d93a89bdd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../parametricaservice/tokens/StoredCredential" beforeDir="false" afterPath="$PROJECT_DIR$/../parametricaservice/tokens/StoredCredential" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/ucundinamarca/negocio/reservaservice/ReservaServiceApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/ucundinamarca/negocio/reservaservice/config/CorsConfig$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/ucundinamarca/negocio/reservaservice/config/CorsConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/ucundinamarca/negocio/reservaservice/controller/CuentaController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/ucundinamarca/negocio/reservaservice/controller/HabitacionesController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/ucundinamarca/negocio/reservaservice/controller/PersonasController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/ucundinamarca/negocio/reservaservice/controller/ReservasController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/ucundinamarca/negocio/reservaservice/controller/UsuariosController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/ucundinamarca/negocio/reservaservice/entities/Cuenta.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/ucundinamarca/negocio/reservaservice/entities/GaleriaHabitacion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/ucundinamarca/negocio/reservaservice/entities/Habitaciones.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/ucundinamarca/negocio/reservaservice/entities/Huespedes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/ucundinamarca/negocio/reservaservice/entities/Perfil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/ucundinamarca/negocio/reservaservice/entities/Personas.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/ucundinamarca/negocio/reservaservice/entities/ReservaForm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/ucundinamarca/negocio/reservaservice/entities/Reservaciones.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/ucundinamarca/negocio/reservaservice/entities/TipoHabitacion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/ucundinamarca/negocio/reservaservice/entities/Usuarios.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/ucundinamarca/negocio/reservaservice/exceptions/ExceptionsHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/ucundinamarca/negocio/reservaservice/repository/CuentaRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/ucundinamarca/negocio/reservaservice/repository/HabitacionesRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/ucundinamarca/negocio/reservaservice/repository/HuespedesRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/ucundinamarca/negocio/reservaservice/repository/PerfilRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/ucundinamarca/negocio/reservaservice/repository/PersonasRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/ucundinamarca/negocio/reservaservice/repository/ReservacionesRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/ucundinamarca/negocio/reservaservice/repository/TipoHabitacionRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/ucundinamarca/negocio/reservaservice/repository/UsuariosRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/ucundinamarca/negocio/reservaservice/services/CuentaService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/ucundinamarca/negocio/reservaservice/services/HabitacionesService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/ucundinamarca/negocio/reservaservice/services/PersonasService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/ucundinamarca/negocio/reservaservice/services/ReservasService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/ucundinamarca/negocio/reservaservice/services/UsuariosService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/ucundinamarca/negocio/reservaservice/validators/MinDateToday.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/ucundinamarca/negocio/reservaservice/validators/MinDateTodayValidator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/reservaservice-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-co.edu.ucundinamarca.negocio.reservaservice.ReservaserviceApplicationTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/co.edu.ucundinamarca.negocio.reservaservice.ReservaserviceApplicationTests.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/co/edu/ucundinamarca/negocio/reservaservice/ReservaserviceApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,17 +54,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ReservaServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="reservaservice" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="co.edu.ucundinamarca.negocio.reservaservice.ReservaServiceApplication" />
@@ -150,6 +95,9 @@
       <workItem from="1637721112369" duration="2725000" />
       <workItem from="1637771828398" duration="53000" />
       <workItem from="1637810694330" duration="1467000" />
+      <workItem from="1637861241665" duration="571000" />
+      <workItem from="1637865300099" duration="68000" />
+      <workItem from="1637865394294" duration="380000" />
     </task>
     <servers />
   </component>
