@@ -21,15 +21,18 @@ public class ReservasService {
     private final HuespedesRepository huespedesRepository;
     private final ReservacionesRepository reservacionesRepository;
     private final HabitacionesRepository habitacionesRepository;
+    private final HabitacionesService habitacionesService;
 
     @Autowired
     public ReservasService(HuespedesRepository huespedesRepository,
                            PersonasRepository personasRepository,
                            ReservacionesRepository reservacionesRepository,
-                           HabitacionesRepository habitacionesRepository) {
+                           HabitacionesRepository habitacionesRepository,
+                           HabitacionesService habitacionesService) {
         this.huespedesRepository = huespedesRepository;
         this.reservacionesRepository = reservacionesRepository;
         this.habitacionesRepository = habitacionesRepository;
+        this.habitacionesService = habitacionesService;
     }
 
     public Huespedes getHuespedById( Integer id ) {
@@ -84,8 +87,8 @@ public class ReservasService {
     private long getDiferenciaFechas(Date fec_inicio, Date fec_fin){
         TimeUnit time = TimeUnit.DAYS;
         long diff = fec_fin.getTime() - fec_inicio.getTime();
-
-        return time.convert( diff, TimeUnit.MILLISECONDS );
+        diff = time.convert( diff, TimeUnit.MILLISECONDS );
+        return ( diff == 0 ? 1 : diff);
     }
 
     public List<Reservaciones> getListReservas(Integer[] id_habitaciones, Date fec_inicio, Date fec_fin){
@@ -122,7 +125,10 @@ public class ReservasService {
     }
 
     public List<Reservaciones> registrarReservas( List<Reservaciones> reservas, Cuenta cuenta ){
-        reservas.forEach( r -> r.setCuenta( cuenta ) );
+        reservas.forEach( r -> {
+            habitacionesService.actualizarEstadoHab( r.getHabitacion().getId_habitacion(), 'R' );
+            r.setCuenta( cuenta );
+        } );
         return reservacionesRepository.saveAll( reservas );
     }
 }

@@ -31,7 +31,7 @@ public class UsuariosService {
     }
     public Usuarios addUsuarioFromHuespedes(Integer id_persona, String nombre, String apellido, Long clave){
         Perfil perfilCliente = perfilRepository.findByNombre( "cliente" );
-        String login = nombre+"."+apellido;
+        String login = nombre+"."+apellido + id_persona.toString();
         Usuarios usuario = new Usuarios();
         usuario.setId_persona(id_persona);
         usuario.setId_perfil(perfilCliente.getId_perfil());
