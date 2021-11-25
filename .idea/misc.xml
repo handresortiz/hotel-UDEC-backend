@@ -4,11 +4,15 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/Hotel-UDEC/pom.xml" />
+        <option value="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/pom.xml" />
         <option value="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/login/pom.xml" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/registro/pom.xml" />
         <option value="$PROJECT_DIR$/Hotel-UDEC/dominionegocio/chartsService/pom.xml" />
+=======
+>>>>>>> Developer-Email
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_16" project-jdk-name="11" project-jdk-type="JavaSDK" />
 </project>

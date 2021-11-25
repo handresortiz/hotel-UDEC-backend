@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/dominionegocio/ServicioProducto/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dominionegocio/ServicioProducto/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dominionegocio/chartsService/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dominionegocio/chartsService/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dominionegocio/checkinservice/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dominionegocio/checkinservice/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dominionegocio/customerservice/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dominionegocio/customerservice/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dominionegocio/factura/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dominionegocio/factura/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dominionegocio/login/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dominionegocio/login/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dominionegocio/microservice-email/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dominionegocio/microservice-email/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dominionegocio/ocupacionservice/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dominionegocio/ocupacionservice/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dominionegocio/registro/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dominionegocio/registro/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dominionegocio/reservaservice/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dominionegocio/reservaservice/src/main/resources" charset="UTF-8" />
   </component>
 </project>

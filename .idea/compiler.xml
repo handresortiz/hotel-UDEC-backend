@@ -7,21 +7,38 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+<<<<<<< HEAD
         <module name="chartsService" />
+=======
+        <module name="ServicioProducto" />
+        <module name="factura" />
+        <module name="ocupacionservice" />
+        <module name="checkinservice" />
+>>>>>>> Developer-Email
         <module name="login" />
         <module name="customerservice" />
+        <module name="microservice-email" />
         <module name="registro" />
+        <module name="reservaservice" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+<<<<<<< HEAD
       <module name="chartsService" target="1.8" />
+=======
+      <module name="checkinservice" target="1.8" />
+>>>>>>> Developer-Email
       <module name="customerservice" target="1.8" />
       <module name="dominioinfraestructura" target="1.8" />
       <module name="dominionegocio" target="1.8" />
+      <module name="factura" target="1.8" />
       <module name="Hotel-UDEC" target="1.8" />
       <module name="login" target="1.8" />
       <module name="microservice-email" target="1.8" />
+      <module name="ocupacionservice" target="1.8" />
       <module name="registro" target="1.8" />
+      <module name="reservaservice" target="1.8" />
+      <module name="ServicioProducto" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

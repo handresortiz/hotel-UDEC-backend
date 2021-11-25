@@ -1,19 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
- 
+
     <parent>
         <groupId>co.edu.ucundinamarca</groupId>
         <artifactId>Hotel-UDEC</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-   
+
     <groupId>co.edu.ucundinamarca.negocio</groupId>
     <artifactId>dominionegocio</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>customerservice</module>
+	    <module>ServicioProducto</module>
+
         <module>chartsService</module>
+
+        <module>reservaservice</module>
+        <module>login</module>
+        <module>registro</module>
+        <module>microservice-email</module>
+        <module>factura</module>
+        <module>ocupacionservice</module>
+        <module>checkinservice</module>
+
     </modules>
     <properties>
         <spring-cloud-dependencies.version>Hoxton.SR8</spring-cloud-dependencies.version>  

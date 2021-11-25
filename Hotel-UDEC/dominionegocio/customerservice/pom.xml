@@ -21,9 +21,12 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-webflux</artifactId>
         </dependency>
-        
-       
-        
-    </dependencies>
+            <dependency>
+                  <groupId>io.netty</groupId>
+                  <artifactId>netty-transport</artifactId>
+                  <version>4.1.52.Final</version>
+                  <type>jar</type>
+            </dependency>
+      </dependencies>
 
 </project>
