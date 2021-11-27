@@ -1,38 +1,58 @@
-/*
-
- */
-
-
-
 package co.edu.ucundinamarca.negocio.login.model;
+
 import lombok.Getter;
 import lombok.Setter;
-import org.hibernate.annotations.ColumnDefault;
+import javax.persistence.*;
+import java.io.Serializable;
+import java.util.List;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
-@Entity
+
 @Getter
 @Setter
+@Entity
 @Table(name="usuarios")
+public class Usuario implements Serializable {
 
-public class Usuario {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(columnDefinition = "serial")
+    private Long id_usuario;
+    private String clave;
+    private String login;
+    private Boolean verificado_correo;
+
+    @ManyToOne
+    @JoinColumn(name="id_persona")
+    private Persona idpersona;
+
+    @OneToMany
+    @JoinColumn(name="id_rol")
+    private List<Rol> roles;
 
     public Usuario() {
 
     }
 
-    @Id
-    private Long id_usuario;
+    public Usuario( String clave, String login, Persona idpersona) {
+        this.clave = clave;
+        this.login = login;
+        this.idpersona = idpersona;
+    }
 
-    private String login;
-    private String clave;
-
-    public Usuario(String login, String clave) {
+    public Usuario(String clave, String login){
         this.login = login;
         this.clave = clave;
     }
+
+    public Usuario(Long id_usuario, String login, String clave) {
+        this.login = login;
+        this.clave = clave;
+        this.id_usuario=id_usuario;
+    }
+
+
+
 
 
 }

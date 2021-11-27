@@ -47,6 +47,7 @@ public class Usuario {
     private Perfil idperfil;
 
 
+
     public Usuario( String login) {
         this.login = login;
 

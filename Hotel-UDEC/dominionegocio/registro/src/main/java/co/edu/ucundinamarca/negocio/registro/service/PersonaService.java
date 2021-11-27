@@ -43,8 +43,6 @@ public class PersonaService implements IPersonaService{
     public boolean existsByIdentificacion(Long identificacion){
         return personaRepository.existsByIdentificacion(identificacion);
     }
-    public boolean existsByTelefono(String telefono){
-        return personaRepository.existsByTelefono( telefono);
-    }
+
 
 }

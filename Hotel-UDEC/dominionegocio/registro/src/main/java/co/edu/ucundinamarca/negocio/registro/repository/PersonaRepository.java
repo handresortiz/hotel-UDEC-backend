@@ -26,8 +26,6 @@ public interface PersonaRepository extends JpaRepository<Persona, Long> {
     Optional<Persona> findByIdentificacion(Long identificacion);
     boolean existsByIdentificacion(Long identificacion);
 
-    Optional<Persona> findByTelefono(String telefono);
-    boolean existsByTelefono(String telefono);
 
     @Query( value = "SELECT * FROM personas ORDER BY id_persona DESC LIMIT 1", nativeQuery = true)
     Persona findAllOrderById_persona();

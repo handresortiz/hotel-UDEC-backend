@@ -19,5 +19,10 @@ import java.util.List;
 public interface PerfilRepository extends JpaRepository<Perfil, Long> {
 
      @Query(value = "SELECT * FROM perfiles ORDER BY id_perfil DESC LIMIT 1", nativeQuery = true)
+
      Perfil findAllOrderById_perfil();
+
+
+
+
 }

@@ -35,12 +35,11 @@ public class PersonaRest {
             return new ResponseEntity(new Mensaje("la identificacion ingresada ya se encuentra registrada"), HttpStatus.BAD_REQUEST);
 
 
-        if(personaService.existsByTelefono(persona.getTelefono()))
-            return new ResponseEntity(new Mensaje("el telefono ya se encuentra registrado"), HttpStatus.BAD_REQUEST);
 
-        personaService.guardar(persona);
 
-        return new ResponseEntity(new Mensaje("persona creada"), HttpStatus.OK);
+        return ResponseEntity.status(HttpStatus.CREATED).body(personaService.guardar(persona));
+
+
     }
 
     @GetMapping("/listar")

@@ -38,7 +38,6 @@ public class Persona {
      private String correo;
      private Long identificacion;
      private Character genero;
-     private Timestamp fec_cambio;
 
      public Persona() {
 
@@ -52,6 +51,7 @@ public class Persona {
           this.telefono = telefono;
 
      }
+
 
 
 }
