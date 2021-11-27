@@ -12,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/dominionegocio/login/login.iml" filepath="$PROJECT_DIR$/dominionegocio/login/login.iml" />
       <module fileurl="file://$PROJECT_DIR$/dominionegocio/microservice-email/microservice-email.iml" filepath="$PROJECT_DIR$/dominionegocio/microservice-email/microservice-email.iml" />
       <module fileurl="file://$PROJECT_DIR$/dominionegocio/ocupacionservice/ocupacionservice.iml" filepath="$PROJECT_DIR$/dominionegocio/ocupacionservice/ocupacionservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dominionegocio/parametricaservice/parametricaservice.iml" filepath="$PROJECT_DIR$/dominionegocio/parametricaservice/parametricaservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/dominionegocio/registro/registro.iml" filepath="$PROJECT_DIR$/dominionegocio/registro/registro.iml" />
       <module fileurl="file://$PROJECT_DIR$/dominionegocio/reservaservice/reservaservice.iml" filepath="$PROJECT_DIR$/dominionegocio/reservaservice/reservaservice.iml" />
     </modules>

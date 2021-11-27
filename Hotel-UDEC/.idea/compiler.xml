@@ -30,6 +30,7 @@
       <module name="login" target="1.8" />
       <module name="microservice-email" target="1.8" />
       <module name="ocupacionservice" target="1.8" />
+      <module name="parametricaservice" target="1.8" />
       <module name="registro" target="1.8" />
       <module name="reservaservice" target="1.8" />
       <module name="ServicioProducto" target="1.8" />

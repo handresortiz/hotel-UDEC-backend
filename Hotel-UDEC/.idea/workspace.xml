@@ -69,7 +69,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../hotel-UDEC-backend-Developer-Ocupacion" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.OcupacionServiceApplication">
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -77,6 +77,27 @@
     </configuration>
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
       <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ChartsServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="chartsService" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="co.edu.ucundinamarca.negocio.chartsservice.ChartsServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CheckinserviceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="checkinservice" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="co.edu.ucundinamarca.negocio.checkinservice.CheckinserviceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FacturaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="factura" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="co.edu.ucundinamarca.negocio.factura.FacturaApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -90,6 +111,27 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="co.edu.ucundinamarca.negocio.ocupacionservice.OcupacionServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParametricaserviceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="parametricaservice" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="co.edu.ucundinamarca.negocio.parametricaservice.ParametricaserviceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReservaServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="reservaservice" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="co.edu.ucundinamarca.negocio.reservaservice.ReservaServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServicioProductoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ServicioProducto" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="co.edu.ucundinamarca.negocio.ServicioProducto.ServicioProductoApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
