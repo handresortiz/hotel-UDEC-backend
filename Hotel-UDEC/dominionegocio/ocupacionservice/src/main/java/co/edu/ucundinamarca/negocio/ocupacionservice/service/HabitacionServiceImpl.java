@@ -1,106 +1,71 @@
 package co.edu.ucundinamarca.negocio.ocupacionservice.service;
-
 import java.util.List;
 
-import co.edu.ucundinamarca.negocio.ocupacionservice.models.entity.LogCambioEstado;
-import co.edu.ucundinamarca.negocio.ocupacionservice.models.entity.Reserva;
-import co.edu.ucundinamarca.negocio.ocupacionservice.models.entity.Tipo;
-import co.edu.ucundinamarca.negocio.ocupacionservice.models.repository.IHabitacionDao;
-import co.edu.ucundinamarca.negocio.ocupacionservice.models.repository.ILogEstadoHabitacionDao;
-import co.edu.ucundinamarca.negocio.ocupacionservice.models.repository.IReservaDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import co.edu.ucundinamarca.negocio.ocupacionservice.models.entity.Estado;
-import co.edu.ucundinamarca.negocio.ocupacionservice.models.entity.Habitacion;
-
+import co.edu.ucundinamarca.negocio.ocupacionservice.models.repository.IHabitacionDao;
+import co.edu.ucundinamarca.negocio.ocupacionservice.models.repository.ILogEstadoHabitacionDao;
+import co.edu.ucundinamarca.negocio.ocupacionservice.models.entity.Habitaciones;
+import co.edu.ucundinamarca.negocio.ocupacionservice.models.entity.LogCambioEstado;
+import co.edu.ucundinamarca.negocio.ocupacionservice.models.entity.Reservaciones;
+import co.edu.ucundinamarca.negocio.ocupacionservice.models.entity.TipoHabitacion;
 @Service
 public class HabitacionServiceImpl implements IHabitacionService{
 
 	@Autowired
 	private IHabitacionDao habitacionDao;
-	
+
 	@Autowired
 	private ILogEstadoHabitacionDao logEstadoHabitacionDao;
-	
-	@Autowired
-	private IReservaDao reservaDao;
-	
+
 	@Override
 	@Transactional(readOnly = true)
-	public List<Habitacion> findAll() {
-		return (List<Habitacion>) habitacionDao.findAll();
+	public List<Habitaciones> findAll() {
+		return (List<Habitaciones>) habitacionDao.findAllHabitaciones();
 	}
 
 	@Override
 	@Transactional
-	public Habitacion save(Habitacion habitacion) {
+	public Habitaciones save(Habitaciones habitacion) {
 		return habitacionDao.save(habitacion);
 	}
 
 	@Override
-	public List<LogCambioEstado> findLogAll() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public Habitacion inactivar(Long id) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public Habitacion entregaHabitacion(Long id) {
-		// TODO Auto-generated method stub
-		return null;
+	public Habitaciones entregaHabitacion(Habitaciones habitacion) {
+		return habitacionDao.save(habitacion);
 	}
 
 	@Override
 	@Transactional(readOnly = true)
-	public List<Reserva> findAllReservas() {
-		return (List<Reserva>) habitacionDao.findAllReservas();
+	public List<Reservaciones> findAllReservas() {
+		return (List<Reservaciones>) habitacionDao.findAllReservas();
 	}
 
 	@Override
 	@Transactional(readOnly = true)
-	public List<Reserva> findByIdClienteReserva(Long idCliente) {
-		return (List<Reserva>) habitacionDao.findByIdClienteReserva(idCliente);
-	}
-
-	@Override
-	@Transactional(readOnly = true)
-	public Habitacion findById(Long id) {
+	public Habitaciones findById(Integer id) {
 		return habitacionDao.findById(id).orElse(null);
 	}
 
 	@Override
 	@Transactional(readOnly = true)
-	public List<Tipo> findAllTipos() {
+	public List<TipoHabitacion> findAllTipos() {
 		return habitacionDao.findAllTipos();
 	}
 
 	@Override
-	@Transactional(readOnly = true)
-	public List<Estado> findAllEstados() {
-		return habitacionDao.findAllEstados();
-	}
-
-	@Override
+	@Transactional
 	public void save(LogCambioEstado logCambioEstado) {
 		logEstadoHabitacionDao.save(logCambioEstado);
 	}
 
 	@Override
 	@Transactional(readOnly = true)
-	public List<LogCambioEstado> findAllLogCambioEstado(Long id) {
+	public List<LogCambioEstado> findAllLogCambioEstado(Integer id) {
 		return logEstadoHabitacionDao.findAllById(id);
 	}
 
-	@Override
-	public Estado findByIdEstado(Long id) {
-		return habitacionDao.findByIdEstado(id);
-	}
 
 }
