@@ -17,9 +17,9 @@ import java.util.List;
 public class ventas {
    @Id
    @GeneratedValue(strategy= GenerationType.AUTO)
-    private int id_venta;
+    private Integer id_venta;
     private Date fec_venta;
-    private long total_venta;
+    private Long total_venta;
     private Date fec_cambio;
     //private long id_huesped;
 
