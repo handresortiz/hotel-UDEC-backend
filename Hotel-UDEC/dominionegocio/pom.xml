@@ -13,17 +13,9 @@
     <packaging>pom</packaging>
     <modules>
 
-	    <module>ServicioProducto</module>
-
-        <module>chartsService</module>
-
-        <module>reservaservice</module>
-        <module>login</module>
-        <module>registro</module>
-        <module>microservice-email</module>
+        <module>customerservice</module>
+        <module>OcupacionService</module>
         <module>factura</module>
-        <module>ocupacionservice</module>
-        <module>checkinservice</module>
 
     </modules>
     <properties>
